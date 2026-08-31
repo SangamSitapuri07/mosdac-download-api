@@ -25,7 +25,7 @@ Official manual: <https://www.mosdac.gov.in/downloadapi-manual>
 
 ```bash
 # 1) Clone karo
-git clone https://github.com/<YOUR_USERNAME>/mosdac-download-api.git
+git clone https://github.com/SangamSitapuri07/mosdac-download-api.git
 cd mosdac-download-api
 
 # 2) Dependencies install karo
