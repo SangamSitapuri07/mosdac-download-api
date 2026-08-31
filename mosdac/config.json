@@ -1,0 +1,23 @@
+{
+"user_credentials": {
+        "username/email": "YOUR_MOSDAC_USERNAME",
+        "password": "YOUR_MOSDAC_PASSWORD"
+},
+
+"search_parameters": {
+        "datasetId": "3RIMG_L2B_SST",
+        "startTime": "2024-01-01",
+        "endTime": "2024-01-02",
+        "count": "5",
+        "boundingBox": "",
+        "gId": ""
+},
+
+"download_settings": {
+        "download_path" : "/home/user/mosdac/data",
+        "organize_by_date": false,
+        "skip_user_input": false,
+        "generate_error_logs": true,
+        "error_logs_dir": ""
+}
+}

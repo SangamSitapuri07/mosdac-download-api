@@ -1,0 +1,25 @@
+# Credentials / local config (KABHI commit mat karo)
+config.local.json
+.env
+*.token
+secrets.json
+
+# Downloaded data & logs
+data/
+error_logs/
+*.log
+*.tmp
+*.part
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archive
+*.zip
