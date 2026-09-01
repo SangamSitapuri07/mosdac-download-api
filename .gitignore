@@ -42,3 +42,5 @@ out/*.csv
 out/*.png
 mosdac/config.json.bak
 out/inspect.txt
+out/state.json
+out/animation.gif
