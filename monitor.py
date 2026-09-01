@@ -132,7 +132,7 @@ def make_gif(entries, out_gif, fps=4):
     return out_gif
 
 
-def build_dashboard(entries, meta, refresh_sec, gif=None, ts=None):
+def build_dashboard(entries, meta, refresh_sec, gif=None, ts=None, live=True):
     b64 = lambda p: base64.b64encode(Path(p).read_bytes()).decode() if p and Path(p).exists() else ""
     latest = entries[-1] if entries else None
 
@@ -162,8 +162,13 @@ def build_dashboard(entries, meta, refresh_sec, gif=None, ts=None):
         f"<td>{e['stats'].get('max'):.2f}</td><td>{e['stats'].get('valid',0):,}</td></tr>"
         for e in reversed(entries[-40:]))
 
+    refresh_meta = (f'<meta http-equiv="refresh" content="{refresh_sec}">'
+                    if refresh_sec else "")
+    badge = ("LIVE - monitor.py chal raha hai, naya data aate hi update hoga"
+             if live else "STATIC SNAPSHOT - ek baar banaya gaya, update nahi hoga")
+
     html = f"""<!doctype html><html><head><meta charset="utf-8">
-<meta http-equiv="refresh" content="{refresh_sec}">
+{refresh_meta}
 <title>MOSDAC Live Monitor</title>
 <style>
 body{{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#0f172a;color:#e2e8f0}}
@@ -185,7 +190,8 @@ footer{{padding:12px 24px;color:#64748b;font-size:12px}}
 </style></head><body>
 <header><h1><span class="live"></span>MOSDAC Live SST Monitor</h1>
 <div class="sub">dataset {meta['dataset']} | region {meta['region']} | {len(entries)} files |
-last updated {meta['now']} | auto-refresh every {refresh_sec//60} min</div></header>
+last updated {meta['now']}</div>
+<div class="sub">{badge}</div></header>
 <div class="wrap">{latest_card}{ts_html}{gif_html}
 <div class="card big"><h3>All files (naye upar)</h3>
 <table><tr><th>File</th><th>Time (UTC)</th><th>Mean</th><th>Min</th><th>Max</th><th>Valid px</th></tr>
@@ -268,7 +274,8 @@ def main():
             gif = make_gif(entries, OUT / "animation.gif") if a.gif else None
             meta = {"dataset": a.dataset, "region": a.region,
                     "now": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-            path = build_dashboard(entries, meta, max(60, a.interval * 60 // 2), gif, ts)
+            refresh = 0 if a.once else max(60, a.interval * 60 // 2)
+            path = build_dashboard(entries, meta, refresh, gif, ts, live=not a.once)
             print(f"  dashboard: {path}")
             print(f"  latest   : {entries[-1]['name']} "
                   f"mean={entries[-1]['stats'].get('mean'):.2f}{entries[-1]['units']}")
