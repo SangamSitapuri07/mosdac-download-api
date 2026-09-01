@@ -278,6 +278,33 @@ Logout Successful. Goodbye <username>!
 
 ## 🧪 Test kaise karein (4 levels)
 
+### Level 0 — Full API test report (ek command me sab endpoints)
+
+```powershell
+python apitest.py
+```
+
+(ya `apitest.bat` pe **double-click** kar do — khul kar result dikhayega aur rukega)
+
+Ye report deta hai: Network/DNS → Search API → galat `datasetId` error handling → date filter →
+**Token/Login API** → **Download endpoint**. Credentials `.env` se padhta hai; nahi mile to
+token/download test skip ho jate hain (koi lock ka risk nahi).
+
+```
+===== MOSDAC API TEST REPORT =====
+  [PASS] HTTPS mosdac.gov.in            HTTP 200 | 866 ms
+  [PASS] Search 3RIMG_L2B_SST           totalResults=132 | totalSizeMB=1916
+  [PASS] Galat datasetId pe error handling   HTTP 500 (expected error)
+  [PASS] Date filter (1990)             HTTP 500
+  [FAIL] POST /download_api/gettoken    HTTP 429 | rate_limit_exceeded
+  [SKIP] Download endpoint              token nahi mila
+===== SUMMARY =====
+  PASS: 4 | FAIL: 1 | WARN: 0 | SKIP: 1
+```
+
+> **429 = server rate limit** (tumhari galti nahi) — thodi der baad fir chalao.
+> Agar `python apitest.py` me "can't open file" aaye to pehle `git pull` kar lo.
+
 ### Level 1 — Environment check (sabse pehle ye)
 
 ```bash
