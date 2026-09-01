@@ -77,6 +77,73 @@
 | 9 | **Mobile-friendly UI / PWA** | HTML responsive hai, PWA manifest add karein | Low |
 | 10 | **Multilingual** (Hindi/Gujarati/Tamil) | Static translation strings | Low |
 
+
+
+---
+
+## 🤖 AGENTIC ARCHITECTURE (ORCA-style, par real data pe)
+
+```
+User query (Hindi/Hinglish/English)
+        │
+        ▼
+┌───────────────────────────┐
+│ 1. SUPERVISOR             │  intent + harbour gazetteer + "40 km SW" parsing
+└──────────┬────────────────┘
+           │ parallel wave 1
+   ┌───────┴────────┐
+   ▼                ▼
+┌────────────┐  ┌──────────────────┐
+│ 2. OCEAN   │  │ 3. RISK & GEO    │  SST/front/wind/PFZ   EEZ/IMBL/coast risk
+│ ANALYTICS  │  │    FENCING       │  (numpy)              (point-in-polygon)
+└─────┬──────┘  └────────┬─────────┘
+      │  parallel wave 2 │
+      ▼                  ▼
+┌────────────┐    ┌──────────────┐
+│ 4. NAVIGA- │    │ 5. POLICY    │  A* route: NM/ETA/fuel   monsoon ban, IMBL,
+│   TION     │    │    RAG       │  (real grid par)         KMFR, TNMFRA, ICG SOPs
+└─────┬──────┘    └──────┬───────┘
+      └────────┬─────────┘
+               ▼
+      ┌─────────────────┐
+      │ 6. SYNTHESIZER  │  Hinglish advisory + confidence + evidence
+      └─────────────────┘
+```
+
+**ORCA ka golden rule follow kiya hai:** LLM sirf wahan jahan semantic/language kaam;
+saare numbers aur spatial calculations deterministic Python me.
+
+| Agent | LLM? | Deterministic core | Real data input |
+|---|---|---|---|
+| Supervisor | optional | regex + gazetteer (21 Indian harbours) | — |
+| Ocean Analytics | **nahi** | numpy gradient / Gaussian scoring | INSAT-3DR SST + wind |
+| Risk & Geofencing | **nahi** | matplotlib Path point-in-polygon | MarineRegions EEZ v12 |
+| Navigation | **nahi** | A* (8-connected, wind/EEZ penalty) | SST + wind + EEZ grid |
+| Policy RAG | optional | keyword+context retrieval | 8 real Indian rules |
+| Synthesizer | optional | template + persona tone | sab agents ke findings |
+
+Har run ki **execution_audit.jsonl** banati hai (ORCA ki tarah) —
+`out/audit/execution_audit.jsonl` me har agent ka latency, status, confidence.
+
+### Comparison with ORCA
+| | ORCA | MATSYA |
+|---|---|---|
+| Orchestrator | LangGraph + Qwen 2.5 7B | **pure-Python DAG, zero dependency** (LLM optional) |
+| Runs without GPU/LLM | nahi (LLM zaroori) | **haan — sab kuch offline chalta hai** |
+| AIS vessels | simulated by default | **pending, real API se banayenge** (honest) |
+| Geo DB | PostGIS + Docker | **Shapely-free point-in-polygon, static JSON** |
+| Frontend | Next.js + Deck.GL | **single static HTML + stdlib server** |
+| Install | Node + Docker + Postgres | **`pip install -r requirements.txt`** |
+
+### Naye pending (agentic layer)
+1. 🔴 **Chlorophyll-a** — abhi bhi unavailable (upar dekho)
+2. 🟡 **Wind file structure verify** — `3RIMG_L2P_VSW` ke andar ke dataset names
+3. 🟡 **AIS vessel traffic** — aisstream.io key (real, simulation nahi)
+4. 🟡 **Ocean currents** — ORCA Copernicus NetCDF use karta hai; humein source chahiye
+5. 🔵 **LLM synthesis** — `OPENAI_API_KEY` set karke chalao (optional, offline default hai)
+6. 🔵 **Voice input (Bhashini)** — SIH ke liye achha feature
+7. 🔵 **pgvector RAG** — policy docs zyada hone par
+
 ---
 
 ## 🆚 ORCA (SIH-26176) se comparison — hum behtar kaise hain

@@ -52,6 +52,38 @@ Detail: [`NOTES.md`](NOTES.md)
 
 ---
 
+## 🤖 Agentic AI (6 agents, real data pe)
+
+```powershell
+python matsya.py run --ask "Veraval se 40 km SW tuna ke liye jaaun?"
+python matsya.py serve            # live query console: http://localhost:8000
+```
+
+| # | Agent | Kaam | LLM? |
+|---|---|---|---|
+| 1 | **Supervisor** | intent + 21 Indian harbours ki gazetteer + "40 km SW" parsing | optional |
+| 2 | **Ocean Analytics** | SST, thermal fronts, wind, PFZ score (numpy) | nahi |
+| 3 | **Risk & Geofencing** | India EEZ andar/bahar, IMBL proximity, coast distance | nahi |
+| 4 | **Navigation** | A* route — nautical miles, ETA, diesel (real grid par) | nahi |
+| 5 | **Policy RAG** | monsoon ban, IMBL, KMFR, TNMFRA, Odisha turtle, ICG SOPs | optional |
+| 6 | **Synthesizer** | Hinglish advisory + confidence + evidence | optional |
+
+**ORCA ka rule:** LLM sirf language ke liye; saare numbers deterministic Python me.
+Isliye ye **bina GPU, bina internet, bina LLM ke bhi poora chalta hai**.
+
+Har agent ka latency + confidence + evidence record hota hai → UI me
+**agent swarm mesh**, **thought stream** aur **latency waterfall** dikhte hain.
+
+## 🖥️ Tactical UI
+
+`out/tactical.html` — command-center:
+- canvas radar map (SST / Wind / PFZ layers) + live HUD on hover/click
+- animated **agent swarm mesh** (SVG) + flowing packets
+- **latency waterfall** (kaunsa agent kitna der laga)
+- **thought stream** (har agent ka message, timestamp ke saath)
+- **query console** — natural language (Hindi/Hinglish/English)
+- A* route overlay (dashed animated line) + Google Maps links
+
 ## 🧠 PFZ score kaise banta hai
 
 ```
@@ -101,6 +133,8 @@ fishing.py         lightweight fishing advisory (SST only)
 
 ```powershell
 python matsya.py run                       # poora pipeline (API se real data)
+python matsya.py run --ask "Kochi ke paas machhli kahan milegi?"
+python matsya.py serve                     # live tactical UI + /api/ask (port 8000)
 python matsya.py run --local data          # local .h5 files se (koi API call nahi)
 python matsya.py run --no-wind             # sirf SST
 python matsya.py ingest --hours 24 --max 5 # sirf download
