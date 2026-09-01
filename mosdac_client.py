@@ -55,13 +55,25 @@ class Mosdac:
         self.refresh_token = None
 
     # ---------------- auth ----------------
-    def login(self):
-        r = requests.post(TOKEN_URL, json={"username": self.username,
-                                           "password": self.password}, timeout=30)
+    def login(self, retries=1, verbose=True):
+        """retries>1 hone par 429 (rate limit) pe 60 sec wait kar ke dobara try karta hai."""
+        import time as _t
+        r = None
+        for attempt in range(max(1, retries)):
+            if attempt:
+                if verbose:
+                    print(f"      [429] server rate limit - {60} sec wait kar ke "
+                          f"dobara try ({attempt + 1}/{retries})...", flush=True)
+                _t.sleep(60)
+            r = requests.post(TOKEN_URL, json={"username": self.username,
+                                               "password": self.password}, timeout=30)
+            if r.status_code != 429:
+                break
         if r.status_code == 401:
-            raise MosdacError(f"401 galat username/password (3 baar galat = 1 ghanta lock)")
+            raise MosdacError("401 galat username/password (3 baar galat = 1 ghanta lock)")
         if r.status_code == 429:
-            raise MosdacError("429 server rate limit - thodi der baad try karo")
+            raise MosdacError("429 server rate limit - thodi der baad try karo "
+                              "(--wait-minutes badha kar chalao)")
         if r.status_code != 200:
             raise MosdacError(f"login failed: HTTP {r.status_code} | {r.text[:200]}")
         j = r.json()

@@ -322,6 +322,8 @@ def main():
     ap.add_argument("--max", type=int, default=3, help="kitni files process karein")
     ap.add_argument("--local", default=None, help="local folder/file (API call nahi karega)")
     ap.add_argument("--demo", action="store_true", help="bina credentials ke test")
+    ap.add_argument("--wait-minutes", type=int, default=5,
+                    help="server rate limit (429) pe kitne minute tak retry karein (default 5)")
     ap.add_argument("--no-maps", action="store_true")
     a = ap.parse_args()
 
@@ -348,8 +350,14 @@ def main():
             ents = (res["entries"] or [])[: a.max]
             print(f"[api] {res['total']} files mile, {len(ents)} process karenge\n")
             if ents:
-                m.login()
-                print("[api] login OK\n")
+                try:
+                    m.login(retries=1 + a.wait_minutes)
+                    print("[api] login OK\n")
+                except MosdacError as ex:
+                    print(f"\n[api] LOGIN FAIL: {ex}")
+                    print(f"      Hint: server busy hai. Ye chalao (khud retry karta rahega):")
+                    print(f"      python toolkit.py --wait-minutes 30\n")
+                    return 1
             cache = Path("data")
             cache.mkdir(exist_ok=True)
             for e in ents:
