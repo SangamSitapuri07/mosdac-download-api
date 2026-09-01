@@ -59,6 +59,12 @@ def env(name, default=""):
     return os.environ.get(name, default).strip()
 
 
+def _resolve_path(p):
+    """Relative path ko hamesha repo-root se jodo (mdapi.py alag folder se chalta hai)."""
+    p = Path(str(p)).expanduser()
+    return p if p.is_absolute() else (ROOT / p)
+
+
 def build_config(a):
     load_dotenv()
     user = a.username or env("MOSDAC_USER") or env("MOSDAC_USERNAME") or env("MOSDAC_EMAIL")
@@ -78,7 +84,7 @@ def build_config(a):
             "gId": a.gid or env("MOSDAC_GID", DEFAULTS["gId"]),
         },
         "download_settings": {
-            "download_path": str(Path(a.path or env("MOSDAC_DOWNLOAD_PATH", str(ROOT / "data"))).expanduser()),
+            "download_path": str(_resolve_path(a.path or env("MOSDAC_DOWNLOAD_PATH", "data"))),
             "organize_by_date": (not a.no_organize) if a.no_organize else
                                 (env("MOSDAC_ORGANIZE", "true").lower() in ("1", "true", "yes")),
             "skip_user_input": bool(a.yes or env("MOSDAC_SKIP_PROMPT", "false").lower() in ("1", "true", "yes")),
