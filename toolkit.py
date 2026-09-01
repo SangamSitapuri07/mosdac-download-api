@@ -205,6 +205,9 @@ def make_map(parsed, title, out_png, max_px=900):
         lo1, la1, lo2, la2 = parsed["bbox"]
         ax.set_xlim(lo1, lo2)
         ax.set_ylim(la1, la2)
+    ax.set_facecolor("#c9d4e0")          # land / no-data halka gray-blue
+    for s in ("top", "right", "bottom", "left"):
+        ax.spines[s].set_color("#334155")
     ax.set_aspect("equal", adjustable="box")
     ax.set_xlabel("Longitude (°E)")
     ax.set_ylabel("Latitude (°N)")
