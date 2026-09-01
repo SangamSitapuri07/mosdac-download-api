@@ -26,7 +26,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from mosdac_client import Mosdac, MosdacError  # noqa: E402
-from toolkit import REGIONS, crop, parse_h5, to_celsius  # noqa: E402
+from toolkit import REGIONS, add_basemap, crop, load_geo, parse_h5, to_celsius  # noqa: E402
 
 OUT = Path("out")
 DATA = Path("data")
@@ -100,6 +100,10 @@ def render(data, lat, lon, title, out_png, cmap="turbo", label="", vmin=None, vm
     else:
         pm = ax.imshow(d, cmap=cmap, aspect="auto", vmin=vmin, vmax=vmax)
     ax.set_facecolor("#c9d4e0")
+    try:
+        add_basemap(ax)
+    except Exception:
+        pass
     ax.set_xlabel("Longitude (°E)"); ax.set_ylabel("Latitude (°N)")
     ax.grid(alpha=0.3, linestyle="--", linewidth=0.5)
     ax.set_title(title, fontsize=12)
@@ -174,6 +178,8 @@ def build_html(maps, grids, spots, meta, out_html):
              "<span style='background:#22c55e33;color:#22c55e;padding:2px 9px;border-radius:10px;"
              "font-size:12px;font-weight:700'>ASLI DATA - MOSDAC/INSAT-3DR</span>")
 
+    eez_json = json.dumps(load_geo().get("eez", {}), separators=(",", ":"))
+
     html = f"""<!doctype html><html><head><meta charset="utf-8">
 <title>MOSDAC Fishing Advisory</title>
 <style>
@@ -238,12 +244,19 @@ const LAT={enc(g['lat'])}, LON={enc(g['lon'])}, SST={enc(g['sst'])},
       GRAD={enc(g['grad'])}, SCORE={enc(g['score'])};
 const NY=LAT.length, NX=LAT[0].length;
 const BB={json.dumps(meta['bbox'])};
+const EEZ={eez_json};
 const imgs=[document.getElementById('img0'),document.getElementById('img1')];
 let cur=0;
 function show(k){{cur=k;imgs[0].style.display=k===0?'block':'none';
  imgs[1].style.display=k===1?'block':'none';
  document.getElementById('b0').className=k===0?'':'off';
  document.getElementById('b1').className=k===1?'':'off';}}
+function pip(pt,ring){{let c=false;
+ for(let i=0,j=ring.length-1;i<ring.length;j=i++){{const xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1];
+  if(((yi>pt[1])!=(yj>pt[1]))&&(pt[0]<(xj-xi)*(pt[1]-yi)/(yj-yi)+xi))c=!c;}}
+ return c;}}
+function eezOf(lon,lat){{for(const k in EEZ){{for(const poly of EEZ[k]){{
+ if(pip([lon,lat],poly[0]))return k;}}}}return null;}}
 function vd(s){{if(s>=70)return['#22c55e','✅ BAHUT ACCHA - yahan jao'];
  if(s>=55)return['#84cc16','👍 THEEK HAI - jaa sakte ho'];
  if(s>=40)return['#eab308','🤔 SHAYAD - himmat hai to jao'];
@@ -261,7 +274,8 @@ function tip(e){{
  const [c,txt]=vd(sc===null?0:sc);
  tip.innerHTML=`📍 ${{LAT[i][j].toFixed(2)}}°N, ${{LON[i][j].toFixed(2)}}°E<br>
    🌡️ SST <b>${{sst.toFixed(2)}} °C</b><br>〰️ Front ${{gr===null?'-':gr.toFixed(3)}} °C/km<br>
-   🎯 Score <b style="color:${{c}}">${{(sc||0).toFixed(0)}}</b> - ${{txt}}`;
+   🎯 Score <b style="color:${{c}}">${{(sc||0).toFixed(0)}}</b><br>
+   🗺️ ${{eezOf(LON[i][j],LAT[i][j])||'International waters (High Seas)'}}`;
  tip.style.display='block';
  tip.style.left=Math.min(e.clientX-rect.left+12, rect.width-230)+'px';
  tip.style.top=(e.clientY-rect.top+14)+'px';}}
@@ -279,6 +293,7 @@ function click(e){{
    <tr><th>Sea Surface Temp</th><td><b>${{sst.toFixed(2)}} °C</b></td></tr>
    <tr><th>Thermal front</th><td>${{gr===null?'-':gr.toFixed(4)}} °C/km ${{(gr||0)>0.05?'<b>(strong front!)</b>':''}}</td></tr>
    <tr><th>Fishing score</th><td><b style="color:${{c}}">${{(sc||0).toFixed(0)}}/100</b></td></tr>
+   <tr><th>Zone</th><td><b>${{eezOf(LON[i][j],LAT[i][j])||'International waters (High Seas)'}}</b></td></tr>
    <tr><th>Google Maps</th><td><a style="color:#38bdf8" target="_blank"
      href="https://www.google.com/maps?q=${{LAT[i][j].toFixed(4)}},${{LON[i][j].toFixed(4)}}">yahan kholo</a></td></tr>
    </table>`;

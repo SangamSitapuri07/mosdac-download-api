@@ -140,6 +140,56 @@ def parse_h5(source, var_pref=None):
             "meta": meta, "datasets": names}
 
 
+# ============================ BASEMAP (EEZ + coastline) ============================
+GEO_DIR = Path(__file__).resolve().parent / "geo"
+_GEO_CACHE = None
+
+
+def load_geo():
+    """geo/eez.json + geo/coastline.json load karta hai (na ho to {})."""
+    global _GEO_CACHE
+    if _GEO_CACHE is not None:
+        return _GEO_CACHE
+    out = {"eez": {}, "coast": []}
+    import json as _json
+    f1, f2 = GEO_DIR / "eez.json", GEO_DIR / "coastline.json"
+    try:
+        if f1.exists():
+            out["eez"] = _json.loads(f1.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    try:
+        if f2.exists():
+            out["coast"] = _json.loads(f2.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    _GEO_CACHE = out
+    return out
+
+
+def add_basemap(ax, highlight="India"):
+    """Coastline (gehri line) + EEZ boundary (dashed) map pe lagao."""
+    g = load_geo()
+    drawn = False
+    for seg in g.get("coast", []):
+        xs = [p[0] for p in seg]
+        ys = [p[1] for p in seg]
+        ax.plot(xs, ys, color="#1f2937", linewidth=0.5, alpha=0.8, zorder=3)
+        drawn = True
+    for name, polys in (g.get("eez") or {}).items():
+        main = (name == highlight)
+        for poly in polys:
+            for ring in poly[:1]:
+                xs = [p[0] for p in ring]
+                ys = [p[1] for p in ring]
+                ax.plot(xs, ys, color="#22d3ee" if main else "#64748b",
+                        linewidth=1.1 if main else 0.6,
+                        linestyle="--" if main else ":", alpha=0.9 if main else 0.5,
+                        zorder=4,
+                        label="India EEZ" if main and not drawn else None)
+    return drawn
+
+
 def to_celsius(parsed):
     """Kelvin -> °C (sirf SST jaisi temperature variables ke liye)."""
     if str(parsed.get("units", "")).upper().startswith("K"):
@@ -213,6 +263,10 @@ def make_map(parsed, title, out_png, max_px=900):
     ax.set_ylabel("Latitude (°N)")
     ax.grid(alpha=0.3, linestyle="--", linewidth=0.5)
     ax.set_title(title[:100], fontsize=12)
+    try:
+        add_basemap(ax)
+    except Exception:
+        pass
     cb = fig.colorbar(pm, ax=ax, pad=0.02)
     cb.set_label(f"{parsed['long_name']} ({parsed['units']})")
     fig.tight_layout()
