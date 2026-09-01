@@ -40,3 +40,5 @@ uploads/
 out/demo_*
 out/*.csv
 out/*.png
+mosdac/config.json.bak
+out/inspect.txt

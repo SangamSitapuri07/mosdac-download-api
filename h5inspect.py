@@ -6,7 +6,7 @@ MOSDAC .h5 file inspector - file ke andar kya hai, sab bata deta hai.
     python inspect.py data/xxx.h5          # ek file
     python inspect.py data --values        # min/max/mean bhi (thoda slow)
 
-Output: screen + out/inspect.txt
+Output: screen + out/h5inspect.txt
 """
 
 import argparse
@@ -105,8 +105,8 @@ def main():
                         say(f"      (values nahi nikale: {e})")
         h5.close()
 
-    Path("out/inspect.txt").write_text("\n".join(lines), encoding="utf-8")
-    print(f"\n\nSaved -> out/inspect.txt  (ise yahan paste kar do)")
+    Path("out/h5inspect.txt").write_text("\n".join(lines), encoding="utf-8")
+    print(f"\n\nSaved -> out/h5inspect.txt  (ise yahan paste kar do)")
     return 0
 
 
