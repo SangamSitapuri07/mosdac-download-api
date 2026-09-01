@@ -4,7 +4,6 @@ MOSDAC DATA TOOLKIT (v2) - INSAT-3DR/3S L2B SST ke liye optimized.
 
 API se data lao (ya local files) -> .h5 padho -> map + CSV + Excel + HTML dashboard
 
-    python toolkit.py --demo                                  # bina credentials ke test
     python toolkit.py --local data                            # local .h5 files
     python toolkit.py --start 2026-09-01 --end 2026-09-01 --max 3
     python toolkit.py --local data --region india             # sirf India (default)
@@ -383,49 +382,6 @@ region {meta.get('region')} | {len(records)} files | {meta.get('time')}</div></h
 
 
 # ============================ DEMO (real jaisa structure) ============================
-def demo_records(region):
-    import h5py
-    OUT.mkdir(exist_ok=True)
-    recs = []
-    for k in range(2):
-        buf = io.BytesIO()
-        ny, nx = 704, 700
-        with h5py.File(buf, "w") as f:
-            lat1 = np.linspace(-81, 81, ny).astype(np.float32)
-            lon1 = np.linspace(-7, 155, nx).astype(np.float32)
-            lon2, lat2 = np.meshgrid(lon1, lat1)
-            sst = np.full((1, ny, nx), -999.0, dtype=np.float32)
-            ocean = (np.abs(lat2) < 60)
-            sst[0][ocean] = 273.15 + 24 + 8 * np.cos(np.radians(lat2[ocean] * 3)) \
-                + np.random.rand(int(ocean.sum())) * 2
-            # bilkul asli INSAT-3DR structure: int16 + scale_factor 0.01 + FillValue 32767
-            dla = f.create_dataset("Latitude", data=(lat2 / 0.01).astype(np.int16))
-            dla.attrs["scale_factor"] = np.float32(0.01)
-            dla.attrs["add_offset"] = np.float32(0.0)
-            dla.attrs["_FillValue"] = np.int16(32767)
-            dla.attrs["units"] = np.bytes_(b"degrees_north")
-            dlo = f.create_dataset("Longitude", data=(lon2 / 0.01).astype(np.int16))
-            dlo.attrs["scale_factor"] = np.float32(0.01)
-            dlo.attrs["add_offset"] = np.float32(0.0)
-            dlo.attrs["_FillValue"] = np.int16(32767)
-            dlo.attrs["units"] = np.bytes_(b"degrees_east")
-            d = f.create_dataset("SST", data=sst)
-            d.attrs["_FillValue"] = np.float32(-999.0)
-            d.attrs["units"] = np.bytes_("K")
-            d.attrs["long_name"] = np.bytes_("SST 1DVAR")
-            f.attrs["Satellite_Name"] = np.bytes_("INSAT-3DR")
-            f.attrs["Acquisition_Start_Time"] = np.bytes_(f"01-SEP-2026T0{6+k}:45:43")
-
-        p = parse_h5(buf.getvalue())
-        to_celsius(p)
-        crop(p, REGIONS[region])
-        st = stats_of(p["data"])
-        png = make_map(p, f"DEMO INSAT-3DR SST (°C) - {region}", OUT / f"demo_{k+1}_map.png")
-        to_csv(p, OUT / f"demo_{k+1}.csv")
-        recs.append({"name": f"DEMO_FILE_{k+1}.h5", "parsed": p, "stats": st, "png": png})
-    return recs
-
-
 # ============================ MAIN ============================
 def main():
     ap = argparse.ArgumentParser()
@@ -434,7 +390,6 @@ def main():
     ap.add_argument("--end", default=date.today().isoformat())
     ap.add_argument("--max", type=int, default=3)
     ap.add_argument("--local", default=None)
-    ap.add_argument("--demo", action="store_true")
     ap.add_argument("--region", default="india",
                     choices=list(REGIONS.keys()), help="map/CSV ke liye region")
     ap.add_argument("--bbox", default=None, help="custom: minlon,minlat,maxlon,maxlat")
@@ -454,12 +409,7 @@ def main():
 
     records = []
 
-    if a.demo:
-        print("[demo] asli INSAT-3DR jaisa synthetic data\n")
-        records = demo_records(a.region)
-        meta = {"dataset": "DEMO", "start": "-", "end": "-", "region": a.region,
-                "time": time.strftime("%Y-%m-%d %H:%M:%S")}
-    else:
+    if True:
         sources = []
         if a.local:
             p = Path(a.local)

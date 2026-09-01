@@ -1,0 +1,11 @@
+# MATSYA - Real-data marine advisory
+requests>=2.31
+numpy>=1.24
+matplotlib>=3.7
+h5py>=3.8
+scipy>=1.10        # coast distance (cKDTree) + wind resampling
+# optional (Excel export ke liye)
+pandas>=2.0
+openpyxl>=3.1
+# optional (animation GIF ke liye)
+pillow>=10.0
