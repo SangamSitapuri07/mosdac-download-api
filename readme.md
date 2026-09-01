@@ -21,32 +21,164 @@ Official manual: <https://www.mosdac.gov.in/downloadapi-manual>
 
 ---
 
-## ⚡ Quick Start (5 steps)
+## ⚡ Quick Start — 4 commands, bas itna karna hai
+
+> **Windows (PowerShell) users:** `python3` ki jagah **`python`** ya **`py -3`** use karo,
+> `cp` ki jagah **`copy`**, `nano` ki jagah **`notepad`**, aur `&&` ki jagah command alag line me
+> likho (purane PowerShell me `&&` chalta nahi). Poora Windows wala section neeche hai 👇
 
 ```bash
-# 1) Clone karo
+# 1) Clone + dependencies
+git clone https://github.com/SangamSitapuri07/mosdac-download-api.git
+cd mosdac-download-api
+pip install requests tqdm            # tqdm optional (progress bar)
+
+# 2) Apna ID/password .env me daalo (ye file GitHub par kabhi upload nahi hoti)
+cp .env.example .env
+nano .env                            # MOSDAC_USER aur MOSDAC_PASS bharo
+
+# 3) Test karo (pehle ye - login nahi karta, bilkul safe)
+python3 run.py test
+
+# 4) Sab theek aaye to download
+python3 run.py download --count 2    # pehle 2 files se test, phir poora
+```
+
+> **Credentials sirf `.env` (ya env variables) me rakho** — `mosdac/config.json` har run par
+> khud-b-khud generate hota hai aur wo **gitignored** hai, to password kabhi GitHub par nahi jayega.
+
+### 🩺 `run.py` — ek hi command me sab kuch
+
+| Command | Kya karta hai | Login? |
+|---|---|---|
+| `python3 run.py test` | Python/libs/network check + config banta hai + **Search API** test | ❌ Nahi |
+| `python3 run.py login` | Token/login test (asli credentials, **1 attempt**) | ✅ Haan |
+| `python3 run.py config` | Sirf `mosdac/config.json` generate karta hai | ❌ |
+| `python3 run.py download` | Config bana kar `mdapi.py` chalaata hai (asli download) | ✅ |
+| `python3 run.py doctor` | **test → login → download** ek saath (end-to-end) | ✅ |
+| `python3 run.py doctor --skip-download` | Sirf test + login verify | ✅ |
+
+**Options (kisi bhi command ke saath):**
+```bash
+python3 run.py download --dataset 3SIMG_L1B_STD --start 2026-08-29 --end 2026-08-31
+python3 run.py download --count 2                 # sirf 2 files (test ke liye best)
+python3 run.py download --path ./data --yes       # background, bina Y/N prompt
+python3 run.py download --bbox "70.0,8.0,90.0,28.0" --no-organize
+python3 run.py test --dataset 3RIMG_L2B_SST --start 2026-09-01 --end 2026-09-01
+```
+
+**Env variables** (agar `.env` nahi banani):
+```bash
+export MOSDAC_USER="tumhara_username"
+export MOSDAC_PASS="tumhara_password"
+python3 run.py doctor
+```
+
+> ⚠️ `run.py login` / `download` **asli credentials use karte hain** — 3 galat attempt = 1 ghanta
+> account lock. Isliye pehle hamesha `python3 run.py test` chalao (usme login hota hi nahi).
+
+---
+
+## 🪟 Windows / PowerShell — exact commands
+
+PowerShell me `&&` kaam nahi karta (PowerShell 7 se pehle), `python3`/`nano` bhi nahi hote.
+Ye copy-paste karo, **ek line ek baar me**:
+
+```powershell
+# 1) Clone (ek baar)
+cd C:\Users\sanga\Downloads\mdapi
 git clone https://github.com/SangamSitapuri07/mosdac-download-api.git
 cd mosdac-download-api
 
-# 2) Dependencies install karo
-pip install requests tqdm          # tqdm optional hai (progress bar ke liye)
+# 2) Dependencies
+python -m pip install requests tqdm
 
-# 3) Config banao (template copy karke) aur apni details bharo
-cp mosdac/config.json mosdac/config.local.json
-nano mosdac/config.local.json      # ya koi bhi editor
+# 3) Apna ID/password daalo (Notepad khulega)
+copy .env.example .env
+notepad .env
 
-# 4) Pehle TEST karo (bina login ke search chalti hai)
-python3 mosdac/check_requirements.py --config mosdac/config.json
-python3 examples/search_only.py 3RIMG_L2B_SST 2024-01-01 2024-01-02 5
+# 4) Test (login nahi karta - safe)
+python run.py test
 
-# 5) Download karo
-cd mosdac
-python3 mdapi.py
+# 5) Download (pehle 2 files se test)
+python run.py download --count 2
 ```
 
-> `config.local.json` **gitignore** hai — isme apne asli username/password rakho,
-> galti se GitHub par upload nahi honge. `mdapi.py` `config.json` naam ki file hi padhta hai,
-> to download ke waqt apni local file ko `config.json` ke naam se use karo (ya copy kar lo).
+**Agar `python` bhi nahi milta** ("Python was not found... Microsoft Store"), to `py` launcher use karo:
+
+```powershell
+py --version          # pehle check karo
+py -3 run.py test
+py -3 run.py download --count 2
+```
+
+Agar `py` bhi nahi chalta to **Python launcher / Python 3.x dobara install** karo:
+<https://www.python.org/downloads/> → installer me ✅ **"Add python.exe to PATH"** zaroor tick karo.
+
+### Bina `run.py` ke (agar wo repo me abhi available na ho)
+
+```powershell
+cd mosdac
+notepad config.json
+# "username/email" aur "password" me apni MOSDAC ID/password bharo
+# datasetId / startTime / endTime / count apni zarurat ke hisaab se (count "2" se test karo)
+python mdapi.py
+```
+
+> `mdapi.py` hamesha apne **wale folder** ki `config.json` padhta hai — isliye `cd mosdac` karke
+> hi chalao.
+
+---
+
+## 🔑 Account kaise banaye (username / password kahan se milega)
+
+MOSDAC ka **koi default ya public username/password nahi hota** — account khud banakar
+approval lena padta hai. (Bina login ke sirf *open data* milta hai; API se download ke liye
+registered + approved account chahiye.)
+
+### Step 1 — Register karo
+
+👉 <https://www.mosdac.gov.in/signup/>
+
+Form me ye bharna padta hai (* = required):
+
+| Field | Rule |
+|---|---|
+| **User Name \*** | Min 5 characters, **koi capital letter nahi**, aur **pehle 3 character alphabet** hone chahiye (e.g. `sangam07`) |
+| **Password \*** | Min 8 characters — kam se kam 1 number + 1 UPPERCASE + 1 lowercase + 1 special character |
+| Confirm Password, Title, First Name, Last Name, **Email \*** | — |
+| Organisation, Address, City, Country | — |
+| **Mobile Number \*** | Format: `+91-XXXXXXXXXX` |
+| **Purpose \*** | Data kis kaam ke liye chahiye |
+| Captcha + Terms & Conditions | tick karna zaroori |
+
+### Step 2 — Email verify + approval ka wait
+
+- Email par verification link aata hai → verify karo.
+- Uske baad MOSDAC team account review karti hai; **approval ka email** milta hai
+  (official FAQ: *"You will be intimated through e-mail about the approval"*).
+- Time fix nahi bataya gaya — aam taur par kuch working days lagte hain. Jaldi ho to
+  `admin[at]mosdac[dot]gov[dot]in` par mail kar sakte ho.
+
+### Step 3 — Login check karo
+
+1. Browser me <https://www.mosdac.gov.in> par login try karo.
+2. Phir API test: `curl -X POST https://mosdac.gov.in/download_api/gettoken -H "Content-Type: application/json" -d '{"username":"<USERNAME>","password":"<PASSWORD>"}'`
+   - `200` + token ✅ · `401` ❌ galat credentials
+3. Approved hone ke baad hi wo username/password `config.json` me kaam aayenge.
+
+### Useful links
+
+| Kaam | Link |
+|---|---|
+| Sign up | <https://www.mosdac.gov.in/signup/> |
+| Password reset | <https://www.mosdac.gov.in/realms/Mosdac/login-actions/reset-credentials> |
+| Password change (login ke baad) | Profile → Change Profile → Password |
+| Support | `admin[at]mosdac[dot]gov[dot]in` |
+
+> ⚠️ **Note (NRT vs General user):** General users ko Level-2+ data near-real-time milta hai,
+> lekin **Level-1 data 3 din ki latency** ke saad milta hai. NRT access chahiye to MOSDAC admin se
+> contact karna padta hai.
 
 ---
 

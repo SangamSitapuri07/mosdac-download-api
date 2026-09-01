@@ -231,7 +231,7 @@ python3 check_requirements.py --check-login --username <user> --password <pass> 
 
 ---
 
-## 7. Hamare sandbox me live test ke results (01-Sep-2025)
+## 7. Hamare sandbox me live test ke results (01-Sep-2026)
 
 | Check | Result |
 |---|---|

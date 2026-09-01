@@ -1,5 +1,7 @@
 # Credentials / local config (KABHI commit mat karo)
+.env
 config.local.json
+mosdac/config.json
 .env
 *.token
 secrets.json
@@ -23,3 +25,11 @@ Thumbs.db
 
 # Archive
 *.zip
+
+# SSH / keys (kabhi commit mat karo)
+.ssh/
+*.pem
+id_rsa*
+id_ed25519*
+sync.sh
+.gitconfig
