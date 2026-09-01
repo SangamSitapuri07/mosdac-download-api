@@ -124,10 +124,11 @@ def main():
         add("SKIP", "Login/Token API", ".env me MOSDAC_USER / MOSDAC_PASS nahi mile")
     else:
         def login():
+            nonlocal token
             r = requests.post(TOKEN_URL, json={"username": user, "password": pw}, timeout=30)
             if r.status_code == 200:
                 j = r.json()
-                globals()["token"] = j.get("access_token")
+                token = j.get("access_token")
                 add("PASS", "POST /download_api/gettoken",
                     f"HTTP 200 | access_token={'mil gaya' if j.get('access_token') else 'NAHI'} | "
                     f"refresh_token={'mil gaya' if j.get('refresh_token') else 'NAHI'}")
