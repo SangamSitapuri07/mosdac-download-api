@@ -44,3 +44,6 @@ mosdac/config.json.bak
 out/inspect.txt
 out/state.json
 out/animation.gif
+
+# Generated reports (tool chalane se bante hain - track mat karo)
+out/
