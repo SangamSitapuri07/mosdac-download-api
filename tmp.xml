@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?><results><hits>17</hits><took>102</took><result concept-id="C1443228137-ISRO" revision-id="9" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;1C LIS3 Standard Products&quot;,&quot;Title&quot;:&quot;1C_LIS3_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-12-11T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:11:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;1C_LIS3_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The medium resolution multi-spectral sensor, LISS-3 operates in four spectral bands - B2, B3, B4 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 23.5m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/1C_LIS3_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1443228137-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Order the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;AdditionalAttributes&quot;:[{&quot;DataType&quot;:&quot;STRING&quot;,&quot;Description&quot;:&quot;Not provided&quot;,&quot;Name&quot;:&quot;metadata.tool&quot;,&quot;Value&quot;:&quot;2017-12-11:docbuilder&quot;}],&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;],&quot;AverageFileSize&quot;:450,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;IRS 1C LIS3 Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;EndDate&quot;:&quot;2007-09-20&quot;,&quot;StartDate&quot;:&quot;1996-11-14&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-1C&quot;,&quot;ShortName&quot;:&quot;IRS-1C&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;1996-11-14T00:00:00.000Z&quot;,&quot;EndingDateTime&quot;:&quot;2007-09-20T23:59:59.999Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result><result concept-id="C1443227047-ISRO" revision-id="11" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;1C WIFS Standard Products&quot;,&quot;Title&quot;:&quot;1C_WIFS_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-12-11T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:10:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;1C_WIFS_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The data is acquired in four spectral bands, three in the visible and in NIR (VNIR B2, B3 and B4)and one in the short wave infrared (SWIR B5).The AWiFS camera is realized in two electro-optic modules viz. AWiFS-A and AWiFS-B, providing a combined swath of 740 Km with 56m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/1C_WIFS_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1443227047-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;04023884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Order for the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;AdditionalAttributes&quot;:[{&quot;DataType&quot;:&quot;STRING&quot;,&quot;Description&quot;:&quot;Not provided&quot;,&quot;Name&quot;:&quot;metadata.tool&quot;,&quot;Value&quot;:&quot;2017-12-11:docbuilder&quot;}],&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;],&quot;AverageFileSize&quot;:530,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;IRS 1C Standard Geo Referenced Product&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;EndDate&quot;:&quot;2007-09-20&quot;,&quot;StartDate&quot;:&quot;1999-10-04&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;AWIFS&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-1C&quot;,&quot;ShortName&quot;:&quot;IRS-1C&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;1999-10-04T00:00:00.000Z&quot;,&quot;EndingDateTime&quot;:&quot;2007-09-20T23:59:59.999Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;04023884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;04023884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result><result concept-id="C1293271378-ISRO" revision-id="7" format="application/vnd.nasa.cmr.umm+json;version=1.17.0">{&quot;CollectionCitations&quot;:[{&quot;Version&quot;:&quot;1.0&quot;,&quot;Title&quot;:&quot;P5_PANA_STUC00GTD&quot;,&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;SeriesName&quot;:&quot;Cartosat-1 PANA Standard Products&quot;,&quot;ReleaseDate&quot;:&quot;2005-08-05T00:00:00.000Z&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;Publisher&quot;:&quot;NRSC&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2005-08-05T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2023-02-13T20:48:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;ELEVATION&quot;,&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;C1_PANA_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;This is High resolution satellite carries two PAN sensors with 2.5m resolution and fore-aft stereo capability. The payload is designed to cater to applications in cartography, terrain modeling, cadastral mapping etc.  Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DOI&quot;:{&quot;MissingReason&quot;:&quot;Unknown&quot;,&quot;Explanation&quot;:&quot;It is unknown if this record has a DOI.&quot;},&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DistributionURL&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;}],&quot;DataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2016-08-05T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2016-08-05T00:00:00.000Z&quot;}],&quot;ContactPersons&quot;:[{&quot;Roles&quot;:[&quot;Technical Contact&quot;],&quot;FirstName&quot;:&quot;MS.&quot;,&quot;MiddleName&quot;:&quot;MANJU&quot;,&quot;LastName&quot;:&quot;SARMA&quot;,&quot;ContactInformation&quot;:{&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}],&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;],&quot;City&quot;:&quot;Hyderabad&quot;,&quot;PostalCode&quot;:&quot;500037&quot;}]}}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Order the Product&quot;},&quot;SpatialExtent&quot;:{&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;,&quot;BoundingRectangles&quot;:[{&quot;NorthBoundingCoordinate&quot;:90.0,&quot;WestBoundingCoordinate&quot;:-180.0,&quot;EastBoundingCoordinate&quot;:180.0,&quot;SouthBoundingCoordinate&quot;:-90.0}]},&quot;ResolutionAndCoordinateSystem&quot;:{&quot;HorizontalDataResolution&quot;:{&quot;GenericResolutions&quot;:[{&quot;XDimension&quot;:2.5,&quot;YDimension&quot;:2.5,&quot;Unit&quot;:&quot;Meters&quot;}]}}},&quot;GranuleSpatialRepresentation&quot;:&quot;CARTESIAN&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;],&quot;AverageFileSize&quot;:500.0,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;HUMAN DIMENSIONS&quot;,&quot;Term&quot;:&quot;ENVIRONMENTAL GOVERNANCE/MANAGEMENT&quot;,&quot;VariableLevel1&quot;:&quot;LAND MANAGEMENT&quot;,&quot;VariableLevel2&quot;:&quot;LAND USE/LAND COVER CLASSIFICATION&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;SURFACE ROUGHNESS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;TERRAIN ELEVATION&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;TERRAIN ELEVATION&quot;,&quot;VariableLevel2&quot;:&quot;CONTOUR MAPS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;TERRAIN ELEVATION&quot;,&quot;VariableLevel2&quot;:&quot;DIGITAL ELEVATION/TERRAIN MODEL (DEM)&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;TERRAIN ELEVATION&quot;,&quot;VariableLevel2&quot;:&quot;TOPOGRAPHICAL RELIEF MAPS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;Term&quot;:&quot;TOPOGRAPHY&quot;,&quot;VariableLevel1&quot;:&quot;TOPOGRAPHIC EFFECTS&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Cartosat-1 PANA Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;},&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;Not Provided&quot;},&quot;Platforms&quot;:[{&quot;Type&quot;:&quot;Earth Observation Satellites&quot;,&quot;ShortName&quot;:&quot;IRS-P5&quot;,&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-P5 (CARTOSAT-1)&quot;,&quot;Instruments&quot;:[{&quot;ShortName&quot;:&quot;PAN&quot;,&quot;LongName&quot;:&quot;IRS Panchromatic Camera&quot;}]}],&quot;Projects&quot;:[{&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;,&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;}],&quot;Version&quot;:&quot;1&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2005-08-05T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;Roles&quot;:[&quot;ORIGINATOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;,&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataCenterURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}]},&quot;ContactPersons&quot;:[{&quot;Roles&quot;:[&quot;Data Center Contact&quot;],&quot;FirstName&quot;:&quot;DR.&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;LastName&quot;:&quot;APARNA&quot;,&quot;ContactInformation&quot;:{&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}],&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StreetAddresses&quot;:[&quot;NDC, DPPA and WAA, NRSC&quot;],&quot;City&quot;:&quot;Balanagar&quot;,&quot;PostalCode&quot;:&quot;500037&quot;}],&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataContactURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}]}}]}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.0&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.0&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;}</result><result concept-id="C1293271427-ISRO" revision-id="5" format="application/vnd.nasa.cmr.umm+json;version=1.17.2">{
+    &quot;Abstract&quot;: &quot;This is High resolution satellite carries two PAN sensors with 2.5m resolution and fore-aft stereo capability. The payload is designed to cater to applications in cartography, terrain modeling, cadastral mapping etc.  Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,
+    &quot;AccessConstraints&quot;: {
+        &quot;Description&quot;: &quot;Order the Product&quot;
+    },
+    &quot;ArchiveAndDistributionInformation&quot;: {
+        &quot;FileDistributionInformation&quot;: [
+            {
+                &quot;AverageFileSize&quot;: 500,
+                &quot;AverageFileSizeUnit&quot;: &quot;MB&quot;,
+                &quot;Format&quot;: &quot;TIFF&quot;,
+                &quot;FormatType&quot;: &quot;Native&quot;,
+                &quot;Media&quot;: [
+                    &quot;FTP&quot;
+                ]
+            }
+        ]
+    },
+    &quot;CollectionCitations&quot;: [
+        {
+            &quot;Creator&quot;: &quot;NRSC&quot;,
+            &quot;Editor&quot;: &quot;NRSC&quot;,
+            &quot;Publisher&quot;: &quot;NRSC&quot;,
+            &quot;ReleaseDate&quot;: &quot;2005-08-05T00:00:00.000Z&quot;,
+            &quot;ReleasePlace&quot;: &quot;Hyderabad&quot;,
+            &quot;SeriesName&quot;: &quot;Cartosat-1 Standard Products&quot;,
+            &quot;Title&quot;: &quot;P5_PANF_STUC00GTD&quot;,
+            &quot;Version&quot;: &quot;1.0&quot;
+        }
+    ],
+    &quot;CollectionProgress&quot;: &quot;COMPLETE&quot;,
+    &quot;ContactPersons&quot;: [
+        {
+            &quot;ContactInformation&quot;: {
+                &quot;Addresses&quot;: [
+                    {
+                        &quot;City&quot;: &quot;Hyderabad&quot;,
+                        &quot;Country&quot;: &quot;India&quot;,
+                        &quot;PostalCode&quot;: &quot;500037&quot;,
+                        &quot;StateProvince&quot;: &quot;Telangana&quot;,
+                        &quot;StreetAddresses&quot;: [
+                            &quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;
+                        ]
+                    }
+                ],
+                &quot;ContactMechanisms&quot;: [
+                    {
+                        &quot;Type&quot;: &quot;Email&quot;,
+                        &quot;Value&quot;: &quot;manjusarma_s@nrsc.gov.in&quot;
+                    },
+                    {
+                        &quot;Type&quot;: &quot;Telephone&quot;,
+                        &quot;Value&quot;: &quot;+91-40-23884439&quot;
+                    }
+                ]
+            },
+            &quot;FirstName&quot;: &quot;MS.&quot;,
+            &quot;LastName&quot;: &quot;SARMA&quot;,
+            &quot;MiddleName&quot;: &quot;MANJU&quot;,
+            &quot;Roles&quot;: [
+                &quot;Technical Contact&quot;
+            ]
+        }
+    ],
+    &quot;DOI&quot;: {
+        &quot;Explanation&quot;: &quot;It is unknown if this record has a DOI.&quot;,
+        &quot;MissingReason&quot;: &quot;Unknown&quot;
+    },
+    &quot;DataCenters&quot;: [
+        {
+            &quot;ContactPersons&quot;: [
+                {
+                    &quot;ContactInformation&quot;: {
+                        &quot;Addresses&quot;: [
+                            {
+                                &quot;City&quot;: &quot;Balanagar&quot;,
+                                &quot;Country&quot;: &quot;India&quot;,
+                                &quot;PostalCode&quot;: &quot;500037&quot;,
+                                &quot;StateProvince&quot;: &quot;Telangana&quot;,
+                                &quot;StreetAddresses&quot;: [
+                                    &quot;NDC, DPPA and WAA, NRSC&quot;
+                                ]
+                            }
+                        ],
+                        &quot;ContactMechanisms&quot;: [
+                            {
+                                &quot;Type&quot;: &quot;Email&quot;,
+                                &quot;Value&quot;: &quot;data@nrsc.gov.in&quot;
+                            },
+                            {
+                                &quot;Type&quot;: &quot;Telephone&quot;,
+                                &quot;Value&quot;: &quot;+91-40-23884423&quot;
+                            }
+                        ]
+                    },
+                    &quot;FirstName&quot;: &quot;DR.&quot;,
+                    &quot;LastName&quot;: &quot;APARNA&quot;,
+                    &quot;MiddleName&quot;: &quot;N.&quot;,
+                    &quot;Roles&quot;: [
+                        &quot;Data Center Contact&quot;
+                    ]
+                }
+            ],
+            &quot;LongName&quot;: &quot;NRSC Data Center&quot;,
+            &quot;Roles&quot;: [
+                &quot;ORIGINATOR&quot;
+            ],
+            &quot;ShortName&quot;: &quot;IN/ISRO/NDC&quot;
+        }
+    ],
+    &quot;DataDates&quot;: [
+        {
+            &quot;Date&quot;: &quot;2005-08-05T00:00:00.000Z&quot;,
+            &quot;Type&quot;: &quot;CREATE&quot;
+        },
+        {
+            &quot;Date&quot;: &quot;2016-08-05T00:00:00.000Z&quot;,
+            &quot;Type&quot;: &quot;UPDATE&quot;
+        }
+    ],
+    &quot;DataLanguage&quot;: &quot;eng&quot;,
+    &quot;EntryTitle&quot;: &quot;Cartosat-1 PANF Standard Products&quot;,
+    &quot;ISOTopicCategories&quot;: [
+        &quot;ELEVATION&quot;,
+        &quot;IMAGERY/BASE MAPS/EARTH COVER&quot;
+    ],
+    &quot;MetadataDates&quot;: [
+        {
+            &quot;Date&quot;: &quot;2005-08-05T00:00:00.000Z&quot;,
+            &quot;Type&quot;: &quot;CREATE&quot;
+        },
+        {
+            &quot;Date&quot;: &quot;2018-11-28T00:00:00.000Z&quot;,
+            &quot;Type&quot;: &quot;UPDATE&quot;
+        }
+    ],
+    &quot;MetadataSpecification&quot;: {
+        &quot;Name&quot;: &quot;UMM-C&quot;,
+        &quot;URL&quot;: &quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.2&quot;,
+        &quot;Version&quot;: &quot;1.17.2&quot;
+    },
+    &quot;Platforms&quot;: [
+        {
+            &quot;Instruments&quot;: [
+                {
+                    &quot;LongName&quot;: &quot;IRS Panchromatic Camera&quot;,
+                    &quot;ShortName&quot;: &quot;PAN&quot;
+                }
+            ],
+            &quot;LongName&quot;: &quot;Indian Remote Sensing Satellite-P5 (CARTOSAT-1)&quot;,
+            &quot;ShortName&quot;: &quot;IRS-P5&quot;,
+            &quot;Type&quot;: &quot;Earth Observation Satellites&quot;
+        }
+    ],
+    &quot;ProcessingLevel&quot;: {
+        &quot;Id&quot;: &quot;Not provided&quot;
+    },
+    &quot;Projects&quot;: [
+        {
+            &quot;LongName&quot;: &quot;National Remote Sensing Centre - User Order Processing System&quot;,
+            &quot;ShortName&quot;: &quot;NRSC-UOPS&quot;
+        }
+    ],
+    &quot;Quality&quot;: &quot;Validation Completed&quot;,
+    &quot;RelatedUrls&quot;: [
+        {
+            &quot;Type&quot;: &quot;GET DATA&quot;,
+            &quot;URL&quot;: &quot;https://bhoonidhi.nrsc.gov.in&quot;,
+            &quot;URLContentType&quot;: &quot;DistributionURL&quot;
+        }
+    ],
+    &quot;ScienceKeywords&quot;: [
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;ENVIRONMENTAL GOVERNANCE/MANAGEMENT&quot;,
+            &quot;Topic&quot;: &quot;HUMAN DIMENSIONS&quot;,
+            &quot;VariableLevel1&quot;: &quot;LAND MANAGEMENT&quot;,
+            &quot;VariableLevel2&quot;: &quot;LAND USE/LAND COVER CLASSIFICATION&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;SURFACE ROUGHNESS&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;TERRAIN ELEVATION&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;TERRAIN ELEVATION&quot;,
+            &quot;VariableLevel2&quot;: &quot;CONTOUR MAPS&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;TERRAIN ELEVATION&quot;,
+            &quot;VariableLevel2&quot;: &quot;DIGITAL ELEVATION/TERRAIN MODEL (DEM)&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;TERRAIN ELEVATION&quot;,
+            &quot;VariableLevel2&quot;: &quot;TOPOGRAPHICAL RELIEF MAPS&quot;
+        },
+        {
+            &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+            &quot;Term&quot;: &quot;TOPOGRAPHY&quot;,
+            &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+            &quot;VariableLevel1&quot;: &quot;TOPOGRAPHIC EFFECTS&quot;
+        }
+    ],
+    &quot;ShortName&quot;: &quot;C1_PANF_STUC00GTD&quot;,
+    &quot;SpatialExtent&quot;: {
+        &quot;GranuleSpatialRepresentation&quot;: &quot;CARTESIAN&quot;,
+        &quot;HorizontalSpatialDomain&quot;: {
+            &quot;Geometry&quot;: {
+                &quot;BoundingRectangles&quot;: [
+                    {
+                        &quot;EastBoundingCoordinate&quot;: 180,
+                        &quot;NorthBoundingCoordinate&quot;: 90,
+                        &quot;SouthBoundingCoordinate&quot;: -90,
+                        &quot;WestBoundingCoordinate&quot;: -180
+                    }
+                ],
+                &quot;CoordinateSystem&quot;: &quot;CARTESIAN&quot;
+            },
+            &quot;ResolutionAndCoordinateSystem&quot;: {
+                &quot;HorizontalDataResolution&quot;: {
+                    &quot;GenericResolutions&quot;: [
+                        {
+                            &quot;Unit&quot;: &quot;Meters&quot;,
+                            &quot;XDimension&quot;: 2.5,
+                            &quot;YDimension&quot;: 2.5
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    &quot;TemporalExtents&quot;: [
+        {
+            &quot;EndsAtPresentFlag&quot;: false,
+            &quot;RangeDateTimes&quot;: [
+                {
+                    &quot;BeginningDateTime&quot;: &quot;2005-08-05T00:00:00.000Z&quot;
+                }
+            ]
+        }
+    ],
+    &quot;UseConstraints&quot;: {
+        &quot;Description&quot;: &quot;Non Commercial, Scientific use&quot;
+    },
+    &quot;Version&quot;: &quot;1&quot;
+}</result><result concept-id="C2866789316-ISRO" revision-id="1" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{
+  &quot;MetadataSpecification&quot;: {
+    &quot;URL&quot;: &quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,
+    &quot;Name&quot;: &quot;UMM-C&quot;,
+    &quot;Version&quot;: &quot;1.17.3&quot;
+  },
+  &quot;ShortName&quot;: &quot;E06_OCM_GAC_STGO00GND&quot;,
+  &quot;Version&quot;: &quot;1.0&quot;,
+  &quot;VersionDescription&quot;: &quot;Latest Version updated on 01April2023&quot;,
+  &quot;EntryTitle&quot;: &quot;EOS-06 OCM Global Area Coverage (GAC) - 1080m resolution Standard Products - Oceansat Series&quot;,
+  &quot;DataLanguage&quot;: &quot;eng&quot;,
+  &quot;DOI&quot;: {
+    &quot;DOI&quot;: &quot;https://dx.doi.org/10.46693/NRSC/10/E06_OCM_GAC_STGO00GND&quot;,
+    &quot;Authority&quot;: &quot;NRSC/ISRO&quot;
+  },
+  &quot;CollectionDataType&quot;: &quot;OTHER&quot;,
+  &quot;ProcessingLevel&quot;: {
+    &quot;Id&quot;: &quot;1C&quot;
+  },
+  &quot;CollectionProgress&quot;: &quot;ACTIVE&quot;,
+  &quot;Quality&quot;: &quot;Validation Completed&quot;,
+  &quot;UseConstraints&quot;: {
+    &quot;Description&quot;: &quot;Non Commercial, Scientific use&quot;,
+    &quot;FreeAndOpenData&quot;: true
+  },
+  &quot;AccessConstraints&quot;: {
+    &quot;Description&quot;: &quot;Download the product&quot;
+  },
+  &quot;RelatedUrls&quot;: [
+    {
+      &quot;Description&quot;: &quot;ISRO&apos;s EO data hub&quot;,
+      &quot;URLContentType&quot;: &quot;DistributionURL&quot;,
+      &quot;Type&quot;: &quot;GET DATA VIA DIRECT ACCESS&quot;,
+      &quot;URL&quot;: &quot;https://bhoonidhi.nrsc.gov.in&quot;
+    }
+  ],
+  &quot;AncillaryKeywords&quot;: [
+    &quot;ocean related studies&quot;
+  ],
+  &quot;Platforms&quot;: [
+    {
+      &quot;Type&quot;: &quot;Fixed Platforms&quot;,
+      &quot;ShortName&quot;: &quot;OCEAN PLATFORMS&quot;
+    }
+  ],
+  &quot;TemporalExtents&quot;: [
+    {
+      &quot;RangeDateTimes&quot;: [
+        {
+          &quot;BeginningDateTime&quot;: &quot;2023-04-01T00:00:00.000Z&quot;
+        }
+      ]
+    }
+  ],
+  &quot;TemporalKeywords&quot;: [
+    &quot;Daily - &lt; Weekly&quot;
+  ],
+  &quot;DataCenters&quot;: [
+    {
+      &quot;Roles&quot;: [
+        &quot;ORIGINATOR&quot;
+      ],
+      &quot;ShortName&quot;: &quot;IN/ISRO/NDC&quot;,
+      &quot;LongName&quot;: &quot;NRSC Data Center&quot;,
+      &quot;ContactInformation&quot;: {
+        &quot;ContactMechanisms&quot;: [
+          {
+            &quot;Type&quot;: &quot;Email&quot;,
+            &quot;Value&quot;: &quot;bhoonidhi@nrsc.gov.in&quot;
+          }
+        ],
+        &quot;Addresses&quot;: [
+          {
+            &quot;Country&quot;: &quot;India&quot;
+          }
+        ],
+        &quot;RelatedUrls&quot;: [
+          {
+            &quot;URLContentType&quot;: &quot;DataCenterURL&quot;,
+            &quot;Type&quot;: &quot;HOME PAGE&quot;,
+            &quot;URL&quot;: &quot;https://nrsc.gov.in/&quot;
+          }
+        ]
+      },
+      &quot;ContactPersons&quot;: [
+        {
+          &quot;Roles&quot;: [
+            &quot;Data Center Contact&quot;
+          ],
+          &quot;FirstName&quot;: &quot;Dr.N.&quot;,
+          &quot;LastName&quot;: &quot;Aparna&quot;,
+          &quot;ContactInformation&quot;: {
+            &quot;ContactMechanisms&quot;: [
+              {
+                &quot;Type&quot;: &quot;Email&quot;,
+                &quot;Value&quot;: &quot;bhoonidhi@nrsc.gov.in&quot;
+              }
+            ],
+            &quot;RelatedUrls&quot;: [
+              {
+                &quot;URLContentType&quot;: &quot;DataContactURL&quot;,
+                &quot;Type&quot;: &quot;HOME PAGE&quot;,
+                &quot;URL&quot;: &quot;https://nrsc.gov.in/&quot;
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  &quot;MetadataLanguage&quot;: &quot;eng&quot;,
+  &quot;ArchiveAndDistributionInformation&quot;: {
+    &quot;FileDistributionInformation&quot;: [
+      {
+        &quot;Format&quot;: &quot;NetCDF&quot;,
+        &quot;FormatType&quot;: &quot;Supported&quot;,
+        &quot;Media&quot;: [
+          &quot;HTTP&quot;
+        ],
+        &quot;Fees&quot;: &quot;Free&quot;
+      }
+    ]
+  },
+  &quot;Abstract&quot;: &quot;The main objectives of E06 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water. This has global coverage for every 2 days and sun glint free data for every 13 days.&quot;,
+  &quot;Purpose&quot;: &quot;The main objectives of E06 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water. This has global coverage for every 2 days and sun glint free data for every 13 days.&quot;,
+  &quot;ScienceKeywords&quot;: [
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN OPTICS&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN OPTICS&quot;,
+      &quot;VariableLevel1&quot;: &quot;CHLOROPHYLL&quot;,
+      &quot;VariableLevel2&quot;: &quot;CHLOROPHYLL CONCENTRATION&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;ATMOSPHERE&quot;,
+      &quot;Term&quot;: &quot;AEROSOLS&quot;,
+      &quot;VariableLevel1&quot;: &quot;AEROSOL ABSORPTION&quot;
+    }
+  ],
+  &quot;SpatialExtent&quot;: {
+    &quot;GranuleSpatialRepresentation&quot;: &quot;CARTESIAN&quot;
+  }
+}</result><result concept-id="C2866790547-ISRO" revision-id="1" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{
+  &quot;MetadataSpecification&quot;: {
+    &quot;URL&quot;: &quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,
+    &quot;Name&quot;: &quot;UMM-C&quot;,
+    &quot;Version&quot;: &quot;1.17.3&quot;
+  },
+  &quot;ShortName&quot;: &quot;E06_OCM_LAC_STGO00GND&quot;,
+  &quot;Version&quot;: &quot;1.0&quot;,
+  &quot;VersionDescription&quot;: &quot;Latest Version updated on 01April2023&quot;,
+  &quot;EntryTitle&quot;: &quot;EOS-06 OCM Local Area Coverage (LAC) - 366m Resolution Standard Products - Oceansat Series&quot;,
+  &quot;DOI&quot;: {
+    &quot;DOI&quot;: &quot;https://dx.doi.org/10.46693/NRSC/10/E06_OCM_LAC_STGO00GND&quot;
+  },
+  &quot;Abstract&quot;: &quot;The main objectives of E06 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water. &quot;,
+  &quot;Purpose&quot;: &quot;The main objectives of E06 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water. &quot;,
+  &quot;ScienceKeywords&quot;: [
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN OPTICS&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN CHEMISTRY&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;SALINITY/DENSITY&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN TEMPERATURE&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;OCEANS&quot;,
+      &quot;Term&quot;: &quot;OCEAN OPTICS&quot;,
+      &quot;VariableLevel1&quot;: &quot;CHLOROPHYLL&quot;,
+      &quot;VariableLevel2&quot;: &quot;CHLOROPHYLL CONCENTRATION&quot;
+    }
+  ],
+  &quot;SpatialExtent&quot;: {
+    &quot;GranuleSpatialRepresentation&quot;: &quot;CARTESIAN&quot;
+  },
+  &quot;DataDates&quot;: [
+    {
+      &quot;Type&quot;: &quot;CREATE&quot;,
+      &quot;Date&quot;: &quot;2023-04-01T00:00:00.000Z&quot;
+    }
+  ],
+  &quot;CollectionDataType&quot;: &quot;OTHER&quot;,
+  &quot;ProcessingLevel&quot;: {
+    &quot;Id&quot;: &quot;1C&quot;,
+    &quot;ProcessingLevelDescription&quot;: &quot;LEVEL-1C&quot;
+  },
+  &quot;CollectionProgress&quot;: &quot;ACTIVE&quot;,
+  &quot;UseConstraints&quot;: {
+    &quot;Description&quot;: &quot;https://bhoonidhi.nrsc.gov.in&quot;,
+    &quot;FreeAndOpenData&quot;: true
+  },
+  &quot;Platforms&quot;: [
+    {
+      &quot;Type&quot;: &quot;Fixed Platforms&quot;,
+      &quot;ShortName&quot;: &quot;OCEAN PLATFORMS&quot;
+    }
+  ],
+  &quot;DataCenters&quot;: [
+    {
+      &quot;Roles&quot;: [
+        &quot;ORIGINATOR&quot;
+      ],
+      &quot;ShortName&quot;: &quot;IN/ISRO/NDC&quot;,
+      &quot;LongName&quot;: &quot;NRSC Data Center&quot;,
+      &quot;ContactInformation&quot;: {
+        &quot;ContactMechanisms&quot;: [
+          {
+            &quot;Type&quot;: &quot;Email&quot;,
+            &quot;Value&quot;: &quot;bhoonidhi@nrsc.gov.in&quot;
+          },
+          {
+            &quot;Type&quot;: &quot;Telephone&quot;,
+            &quot;Value&quot;: &quot;040-23884436&quot;
+          }
+        ],
+        &quot;Addresses&quot;: [
+          {
+            &quot;Country&quot;: &quot;India&quot;
+          }
+        ],
+        &quot;RelatedUrls&quot;: [
+          {
+            &quot;URLContentType&quot;: &quot;DataCenterURL&quot;,
+            &quot;Type&quot;: &quot;HOME PAGE&quot;,
+            &quot;URL&quot;: &quot;https://nrsc.gov.in/&quot;
+          }
+        ]
+      }
+    }
+  ],
+  &quot;MetadataLanguage&quot;: &quot;eng&quot;,
+  &quot;TemporalExtents&quot;: [
+    {
+      &quot;RangeDateTimes&quot;: [
+        {
+          &quot;BeginningDateTime&quot;: &quot;2023-04-01T00:00:00.000Z&quot;
+        }
+      ]
+    }
+  ],
+  &quot;TemporalKeywords&quot;: [
+    &quot;Daily - &lt; Weekly&quot;
+  ],
+  &quot;ArchiveAndDistributionInformation&quot;: {
+    &quot;FileDistributionInformation&quot;: [
+      {
+        &quot;Format&quot;: &quot;NetCDF&quot;,
+        &quot;FormatType&quot;: &quot;Supported&quot;,
+        &quot;Media&quot;: [
+          &quot;HTTP&quot;
+        ]
+      }
+    ]
+  }
+}</result><result concept-id="C1416267814-ISRO" revision-id="9" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Standard Products&quot;,&quot;Title&quot;:&quot;O2_OCM_STUC00GHD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-07-28T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:10:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;O2_OCM_STUC00GHD&quot;,&quot;Abstract&quot;:&quot;Local Area Coverage (LAC) Ocean Color Monitor Radiance products with 360 m x 360 m resolution.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The main objectives of OceanSat-2 are to study surface winds and ocean surface strata, observation of chlorophyll concentrations, monitoring of phytoplankton blooms, study of atmospheric aerosols and suspended sediments in the water. OceanSat-2 will play an important role in forecasting the onset of the monsoon and its subsequent advancement over the Indian subcontinent and over South-East Asia.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/O2_OCM_STUC00GHD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1416267814-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;04023884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;HDF4&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;HTTP&quot;],&quot;AverageFileSize&quot;:400,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;,&quot;Fees&quot;:&quot;Free&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;AQUATIC SCIENCES&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;VariableLevel1&quot;:&quot;FISHERIES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;BATHYMETRY/SEAFLOOR TOPOGRAPHY&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;VariableLevel1&quot;:&quot;BATHYMETRY&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Ocean Color Monitor Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Daily - \u003c Weekly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Ocean&quot;,&quot;chlorophyll&quot;,&quot;oceansat2&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1&quot;},&quot;Platforms&quot;:[{&quot;Type&quot;:&quot;Earth Observation Satellites&quot;,&quot;ShortName&quot;:&quot;IRS-O2&quot;,&quot;LongName&quot;:&quot;Oceansat-2&quot;,&quot;Instruments&quot;:[{&quot;ShortName&quot;:&quot;OPS&quot;,&quot;LongName&quot;:&quot;Optical Sensor&quot;}]}],&quot;Projects&quot;:[{&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;,&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2010-01-05T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Balanagar&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;NDC, DPPA and WAA, NRSC&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;04023884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;04023884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false,&quot;PublicationReferences&quot;:[{&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/O2_OCM_STUC00GHD&quot;}}]}</result><result concept-id="C1990979255-ISRO" revision-id="1" format="application/vnd.nasa.cmr.umm+json;version=1.15.4">{&quot;ShortName&quot;:&quot;OS2_SCAT_L2B&quot;,&quot;Version&quot;:&quot;1&quot;,&quot;VersionDescription&quot;:&quot;Oceansat -2 Scatterometer Level-2B wind Vector Products&quot;,&quot;EntryTitle&quot;:&quot;Oceansat -2 Scatterometer Level-2B wind Vector Products&quot;,&quot;DOI&quot;:{&quot;MissingReason&quot;:&quot;Not Applicable&quot;,&quot;Explanation&quot;:&quot;Very soon it will be updated&quot;},&quot;Abstract&quot;:&quot;Scatterometer provides wind vector data products for weather forecasting, cyclone detection and tracking services to the users&quot;,&quot;Purpose&quot;:&quot;Scatterometer provides wind vector data products for weather forecasting, cyclone detection and tracking services to the users&quot;,&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;DataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2010-01-01T00:00:00.000Z&quot;}],&quot;CollectionDataType&quot;:&quot;NEAR_REAL_TIME&quot;,&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;2&quot;,&quot;ProcessingLevelDescription&quot;:&quot;LEVEL 2B&quot;},&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;UseConstraints&quot;:{&quot;Description&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;}},&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the product free of cost&quot;},&quot;PublicationReferences&quot;:[{&quot;DOI&quot;:{&quot;MissingReason&quot;:&quot;Not Applicable&quot;},&quot;Author&quot;:&quot;Ms. Manju Sarma&quot;}],&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;CollectionURL&quot;,&quot;Type&quot;:&quot;PROFESSIONAL HOME PAGE&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;}],&quot;Platforms&quot;:[{&quot;Type&quot;:&quot;Earth Observation Satellites&quot;,&quot;ShortName&quot;:&quot;IRS-O2&quot;,&quot;LongName&quot;:&quot;Oceansat-2&quot;}],&quot;TemporalExtents&quot;:[{&quot;PrecisionOfSeconds&quot;:20,&quot;PeriodicDateTimes&quot;:[{&quot;Name&quot;:&quot;level2B&quot;,&quot;StartDate&quot;:&quot;2010-01-01T00:00:00.000Z&quot;,&quot;EndDate&quot;:&quot;2014-12-31T00:00:00.000Z&quot;,&quot;DurationUnit&quot;:&quot;DAY&quot;,&quot;DurationValue&quot;:24,&quot;PeriodCycleDurationUnit&quot;:&quot;DAY&quot;,&quot;PeriodCycleDurationValue&quot;:1}]}],&quot;TemporalKeywords&quot;:[&quot;Hourly - \u003c Daily&quot;],&quot;SpatialExtent&quot;:{&quot;SpatialCoverageType&quot;:&quot;ORBITAL&quot;,&quot;OrbitParameters&quot;:{&quot;SwathWidth&quot;:1400,&quot;Period&quot;:99.31,&quot;InclinationAngle&quot;:98.28,&quot;NumberOfOrbits&quot;:14},&quot;GranuleSpatialRepresentation&quot;:&quot;ORBIT&quot;},&quot;DataCenters&quot;:[{&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;,&quot;ORIGINATOR&quot;,&quot;PROCESSOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;,&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;ContactInformation&quot;:{&quot;ServiceHours&quot;:&quot;9-5.30&quot;,&quot;ContactInstruction&quot;:&quot;Mail to aparna_n@nrsc.gov.in&quot;,&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StateProvince&quot;:&quot;Andhra Pradesh&quot;}],&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataCenterURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}]},&quot;ContactGroups&quot;:[{&quot;Roles&quot;:[&quot;Data Center Contact&quot;],&quot;GroupName&quot;:&quot;NDC&quot;,&quot;ContactInformation&quot;:{&quot;ServiceHours&quot;:&quot;9 to 5.30&quot;,&quot;ContactInstruction&quot;:&quot;aparna N \u003caparna_n@nrsc.gov.in\u003e&quot;,&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;aparna N \u003caparna_n@nrsc.gov.in\u003e&quot;}],&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StreetAddresses&quot;:[&quot;National Remote Sensing Data Center&quot;,&quot;Balanagar, Hyderabad&quot;],&quot;City&quot;:&quot;Hyderabad&quot;,&quot;StateProvince&quot;:&quot;Andhra Pradesh&quot;,&quot;PostalCode&quot;:&quot;500018&quot;}],&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataContactURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}]}}]}],&quot;MetadataLanguage&quot;:&quot;eng&quot;,&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileArchiveInformation&quot;:[{&quot;Format&quot;:&quot;HDF4&quot;,&quot;FormatType&quot;:&quot;Supported&quot;,&quot;AverageFileSize&quot;:2,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;,&quot;TotalCollectionFileSize&quot;:500,&quot;TotalCollectionFileSizeUnit&quot;:&quot;GB&quot;}]},&quot;AncillaryKeywords&quot;:[&quot;wind product&quot;],&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;SURFACE WINDS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;VERTICAL WIND MOTION&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;WIND STRESS&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2021-01-07T13:54:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2021-01-07T13:54:00.000Z&quot;}]}</result><result concept-id="C2025913655-ISRO" revision-id="3" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2021-01-07T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2023-12-28T19:11:00.000Z&quot;}],&quot;VersionDescription&quot;:&quot;Oceansat-2 Scatterometer Level-3SH Sigma-0 Products Horizontal Polarization&quot;,&quot;ShortName&quot;:&quot;OS2_SCAT_L3SH&quot;,&quot;Abstract&quot;:&quot;All sigma-0 measurements (forward and aft looking) for Veritcal polarization and falling within a grid cell are averaged. A separate product is generated for Veritcal polarization.&quot;,&quot;Purpose&quot;:&quot;Scatterometer provides wind vector data products for weather forecasting, cyclone detection and tracking services to the users&quot;,&quot;PublicationReferences&quot;:[{&quot;Author&quot;:&quot;Ms. Manju Sarma&quot;}],&quot;DOI&quot;:{&quot;MissingReason&quot;:&quot;Unknown&quot;,&quot;Explanation&quot;:&quot;It is unknown if this record has a DOI.&quot;},&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;CollectionURL&quot;,&quot;Type&quot;:&quot;PROFESSIONAL HOME PAGE&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;}],&quot;DataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2010-01-01T00:00:00.000Z&quot;}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the product free of cost&quot;},&quot;SpatialExtent&quot;:{&quot;SpatialCoverageType&quot;:&quot;ORBITAL&quot;,&quot;OrbitParameters&quot;:{&quot;SwathWidthUnit&quot;:&quot;Kilometer&quot;,&quot;OrbitPeriod&quot;:99.31,&quot;OrbitPeriodUnit&quot;:&quot;Decimal Minute&quot;,&quot;SwathWidth&quot;:1400,&quot;NumberOfOrbits&quot;:14,&quot;InclinationAngle&quot;:98.28,&quot;InclinationAngleUnit&quot;:&quot;Degree&quot;},&quot;GranuleSpatialRepresentation&quot;:&quot;ORBIT&quot;},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;SURFACE WINDS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;VERTICAL WIND MOTION&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Topic&quot;:&quot;OCEANS&quot;,&quot;Term&quot;:&quot;OCEAN WINDS&quot;,&quot;VariableLevel1&quot;:&quot;WIND STRESS&quot;}],&quot;EntryTitle&quot;:&quot;Oceansat-2 Scatterometer Level-3SH Sigma-0 Products Horizantal Polarization&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;CollectionDataType&quot;:&quot;NEAR_REAL_TIME&quot;,&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Hourly - \u003c Daily&quot;],&quot;AncillaryKeywords&quot;:[&quot;wind product&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;2&quot;},&quot;Platforms&quot;:[{&quot;Type&quot;:&quot;Earth Observation Satellites&quot;,&quot;ShortName&quot;:&quot;IRS-O2&quot;,&quot;LongName&quot;:&quot;Oceansat-2&quot;}],&quot;Version&quot;:&quot;1&quot;,&quot;TemporalExtents&quot;:[{&quot;PrecisionOfSeconds&quot;:20,&quot;EndsAtPresentFlag&quot;:false,&quot;PeriodicDateTimes&quot;:[{&quot;Name&quot;:&quot;level2B&quot;,&quot;StartDate&quot;:&quot;2010-01-01T00:00:00.000Z&quot;,&quot;EndDate&quot;:&quot;2014-12-31T00:00:00.000Z&quot;,&quot;DurationUnit&quot;:&quot;DAY&quot;,&quot;DurationValue&quot;:24,&quot;PeriodCycleDurationUnit&quot;:&quot;DAY&quot;,&quot;PeriodCycleDurationValue&quot;:1}]}],&quot;DataCenters&quot;:[{&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;,&quot;ORIGINATOR&quot;,&quot;PROCESSOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;,&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;ContactGroups&quot;:[{&quot;Roles&quot;:[&quot;Data Center Contact&quot;],&quot;ContactInformation&quot;:{&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;aparna N \u003caparna_n@nrsc.gov.in\u003e&quot;}],&quot;Addresses&quot;:[{&quot;StreetAddresses&quot;:[&quot;National Remote Sensing Data Center&quot;,&quot;Balanagar, Hyderabad&quot;],&quot;City&quot;:&quot;Hyderabad&quot;,&quot;StateProvince&quot;:&quot;Andhra Pradesh&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500018&quot;}]},&quot;GroupName&quot;:&quot;NDC&quot;}],&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataCenterURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}],&quot;ServiceHours&quot;:&quot;9-5.30&quot;,&quot;ContactInstruction&quot;:&quot;Mail to aparna_n@nrsc.gov.in&quot;}}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;HDF5&quot;,&quot;Media&quot;:[&quot;HTTP&quot;]}]}}</result><result concept-id="C2025914854-ISRO" revision-id="1" format="application/dif10+xml">
+        <DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/"
+            xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v10.2.xsd">
+            <Entry_ID>
+                <Short_Name>OS2_SCAT_L3SV</Short_Name>
+                <Version>1</Version>
+            </Entry_ID>
+            <Version_Description>Oceansat-2 Scatterometer Level-3SH Sigma-0 Products Horizontal Polarization</Version_Description>
+            <Entry_Title>Oceansat-2 Scatterometer Level-3SV Sigma-0 Products Vertical Polarization</Entry_Title>
+            <Science_Keywords>
+                <Category>EARTH SCIENCE</Category>
+                <Topic>OCEANS</Topic>
+                <Term>OCEAN WINDS</Term>
+                <Variable_Level_1>SURFACE WINDS</Variable_Level_1>
+            </Science_Keywords>
+            <Science_Keywords>
+                <Category>EARTH SCIENCE</Category>
+                <Topic>OCEANS</Topic>
+                <Term>OCEAN WINDS</Term>
+                <Variable_Level_1>VERTICAL WIND MOTION</Variable_Level_1>
+            </Science_Keywords>
+            <Science_Keywords>
+                <Category>EARTH SCIENCE</Category>
+                <Topic>OCEANS</Topic>
+                <Term>OCEAN WINDS</Term>
+                <Variable_Level_1>WIND STRESS</Variable_Level_1>
+            </Science_Keywords>
+            <Ancillary_Keyword>wind product</Ancillary_Keyword>
+            <Platform>
+                <Type>Earth Observation Satellites</Type>
+                <Short_Name>IRS-O2</Short_Name>
+                <Long_Name>Oceansat-2</Long_Name>
+                <Instrument>
+                    <Short_Name>Not provided</Short_Name>
+                </Instrument>
+            </Platform>
+            <Temporal_Coverage>
+                <Precision_Of_Seconds>20</Precision_Of_Seconds>
+                <Periodic_DateTime>
+                    <Name>level2B</Name>
+                    <Start_Date>2010-01-01T00:00:00.000Z</Start_Date>
+                    <End_Date>2014-12-31T00:00:00.000Z</End_Date>
+                    <Duration_Unit>DAY</Duration_Unit>
+                    <Duration_Value>24</Duration_Value>
+                    <Period_Cycle_Duration_Unit>DAY</Period_Cycle_Duration_Unit>
+                    <Period_Cycle_Duration_Value>1</Period_Cycle_Duration_Value>
+                </Periodic_DateTime>
+                <Temporal_Info>
+                    <Ancillary_Temporal_Keyword>Hourly - &lt; Daily</Ancillary_Temporal_Keyword>
+                </Temporal_Info>
+            </Temporal_Coverage>
+            <Dataset_Progress>COMPLETE</Dataset_Progress>
+            <Spatial_Coverage>
+                <Spatial_Coverage_Type>Orbit</Spatial_Coverage_Type>
+                <Granule_Spatial_Representation>ORBIT</Granule_Spatial_Representation>
+                <Orbit_Parameters>
+                    <Swath_Width>1400</Swath_Width>
+                    <Period>99.31</Period>
+                    <Inclination_Angle>98.28</Inclination_Angle>
+                    <Number_Of_Orbits>14</Number_Of_Orbits>
+                </Orbit_Parameters>
+                <Spatial_Info>
+                    <Spatial_Coverage_Type>Not provided</Spatial_Coverage_Type>
+                </Spatial_Info>
+            </Spatial_Coverage>
+            <Project>
+                <Short_Name>Not provided</Short_Name>
+            </Project>
+            <Access_Constraints>Download the product free of cost</Access_Constraints>
+            <Use_Constraints>Non Commercial, Scientific use</Use_Constraints>
+            <Dataset_Language>English</Dataset_Language>
+            <Organization>
+                <Organization_Type>ARCHIVER</Organization_Type>
+                <Organization_Type>DISTRIBUTOR</Organization_Type>
+                <Organization_Type>ORIGINATOR</Organization_Type>
+                <Organization_Type>PROCESSOR</Organization_Type>
+                <Organization_Name>
+                    <Short_Name>IN/ISRO/NDC</Short_Name>
+                    <Long_Name>NRSC Data Center</Long_Name>
+                </Organization_Name>
+                <Hours_Of_Service>9-5.30</Hours_Of_Service>
+                <Instructions>Mail to aparna_n@nrsc.gov.in</Instructions>
+                <Organization_URL>https://nrsc.gov.in/</Organization_URL>
+                <Personnel>
+                    <Role>DATA CENTER CONTACT</Role>
+                    <Contact_Group>
+                        <Name>NDC</Name>
+                        <Address>
+                            <Street_Address>National Remote Sensing Data Center</Street_Address>
+                            <Street_Address>Balanagar, Hyderabad</Street_Address>
+                            <City>Hyderabad</City>
+                            <State_Province>Andhra Pradesh</State_Province>
+                            <Postal_Code>500018</Postal_Code>
+                            <Country>India</Country>
+                        </Address>
+                        <Email>aparna N &lt;aparna_n@nrsc.gov.in&gt;</Email>
+                    </Contact_Group>
+                </Personnel>
+            </Organization>
+            <Reference>
+                <Author>Ms. Manju Sarma</Author>
+            </Reference>
+            <Summary>
+                <Abstract>All sigma-0 measurements (forward and aft looking) for Horizantal polarization and falling within a grid cell are averaged. A separate product is generated for Horizontal polarization.</Abstract>
+                <Purpose>Scatterometer provides wind vector data products for weather forecasting, cyclone detection and tracking services to the users</Purpose>
+            </Summary>
+            <Related_URL>
+                <URL_Content_Type>
+                    <Type>PROFESSIONAL HOME PAGE</Type>
+                </URL_Content_Type>
+                <URL>https://bhoonidhi.nrsc.gov.in</URL>
+            </Related_URL>
+            <Metadata_Name>CEOS IDN DIF</Metadata_Name>
+            <Metadata_Version>VERSION 10.2</Metadata_Version>
+            <Metadata_Dates>
+                <Metadata_Creation>2021-01-07</Metadata_Creation>
+                <Metadata_Last_Revision>2021-01-07</Metadata_Last_Revision>
+                <Data_Creation>2010-01-01T00:00:00.000Z</Data_Creation>
+                <Data_Last_Revision>1970-01-01T00:00:00</Data_Last_Revision>
+            </Metadata_Dates>
+            <Product_Level_Id>2</Product_Level_Id>
+            <Collection_Data_Type>NEAR_REAL_TIME</Collection_Data_Type>
+        </DIF></result><result concept-id="C1373227010-ISRO" revision-id="12" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat-1 AWIFS Standard Products&quot;,&quot;Title&quot;:&quot;P6_AWIF_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-02-24T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:10:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;P6_AWIF_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The coarse resolution multi-spectral sensor, AWIFS operates in four spectral bands - B2, B3, B4, B5 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 56m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/P6_AWIF_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1373227010-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;AdditionalAttributes&quot;:[{&quot;DataType&quot;:&quot;STRING&quot;,&quot;Description&quot;:&quot;Not provided&quot;,&quot;Name&quot;:&quot;metadata.tool&quot;,&quot;Value&quot;:&quot;2017-12-08:docbuilder&quot;}],&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;http&quot;],&quot;AverageFileSize&quot;:2.5,&quot;AverageFileSizeUnit&quot;:&quot;GB&quot;,&quot;Fees&quot;:&quot;Free&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat-1 AWIFS Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2003-12-10&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Monthly - \u003c Annual&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-P6&quot;,&quot;ShortName&quot;:&quot;IRS-P6&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2003-12-10T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false,&quot;PublicationReferences&quot;:[{&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/P6_AWIF_STUC00GTD&quot;}}]}</result><result concept-id="C1373228023-ISRO" revision-id="13" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat-1 LIS3 Standard Products&quot;,&quot;Title&quot;:&quot;P6_LIS3_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-02-24T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:10:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;P6_LIS3_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The medium resolution multi-spectral sensor, LISS-3 operates in four spectral bands - B2, B3, B4 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 23.5m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/P6_LIS3_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1373228023-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;AverageFileSize&quot;:450,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;,&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;]}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat-1 LIS3 Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2003-12-10&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-P6&quot;,&quot;ShortName&quot;:&quot;IRS-P6&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2003-12-10T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;http://www.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false,&quot;PublicationReferences&quot;:[{&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/P6_LIS3_STUC00GTD&quot;}}]}</result><result concept-id="C1405714988-ISRO" revision-id="9" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat 2A LIS3 Standard Products&quot;,&quot;Title&quot;:&quot;R2A_LIS3_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2017-07-05T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:11:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;R2A_LIS3_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The medium resolution multi-spectral sensor, LISS-3 operates in four spectral bands - B2, B3, B4 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 23.5m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/R2A_LIS3_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1405714988-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;AverageFileSize&quot;:450,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;,&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;]}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat 2A LIS3 Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2017-01-06&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-R2A&quot;,&quot;ShortName&quot;:&quot;IRS-R2A&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre (NRSC) - User Order Processing System (UOPS)&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2017-01-06T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;http://www.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result><result concept-id="C1405705637-ISRO" revision-id="10" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{
+  &quot;CollectionCitations&quot;: [
+    {
+      &quot;Version&quot;: &quot;1.0&quot;,
+      &quot;Title&quot;: &quot;R2A_LIS4_FMX_STUC00GTD&quot;,
+      &quot;Creator&quot;: &quot;NRSC&quot;,
+      &quot;Editor&quot;: &quot;NRSC&quot;,
+      &quot;SeriesName&quot;: &quot;Resourcesat 2A LIS4 FMX Standard Products&quot;,
+      &quot;ReleasePlace&quot;: &quot;Hyderabad&quot;,
+      &quot;Publisher&quot;: &quot;NRSC&quot;,
+      &quot;OnlineResource&quot;: {
+        &quot;Linkage&quot;: &quot;https://bhoonidhi.nrsc.gov.in&quot;
+      }
+    }
+  ],
+  &quot;LocationKeywords&quot;: [
+    {
+      &quot;Category&quot;: &quot;CONTINENT&quot;,
+      &quot;Type&quot;: &quot;ASIA&quot;,
+      &quot;Subregion1&quot;: &quot;SOUTHCENTRAL ASIA&quot;,
+      &quot;Subregion2&quot;: &quot;INDIA&quot;
+    }
+  ],
+  &quot;MetadataDates&quot;: [
+    {
+      &quot;Date&quot;: &quot;2017-07-05T00:00:00.000Z&quot;,
+      &quot;Type&quot;: &quot;CREATE&quot;
+    },
+    {
+      &quot;Date&quot;: &quot;2022-09-09T20:14:00.000Z&quot;,
+      &quot;Type&quot;: &quot;UPDATE&quot;
+    }
+  ],
+  &quot;ISOTopicCategories&quot;: [
+    &quot;IMAGERY/BASE MAPS/EARTH COVER&quot;
+  ],
+  &quot;ShortName&quot;: &quot;R2A_LIS4_FMX_STUC00GTD&quot;,
+  &quot;Abstract&quot;: &quot;The coarse resolution multi-spectral sensor, LIS4 FMX operates in four spectral bands - B2, B3, B4, B5 in visible near infrared (VNIR) and B5 in Short Wave Infrared (SWIR) providing data with 5.8m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,
+  &quot;DirectoryNames&quot;: [
+    {
+      &quot;ShortName&quot;: &quot;ISRO/UOPS&quot;
+    }
+  ],
+  &quot;Purpose&quot;: &quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,
+  &quot;DOI&quot;: {
+    &quot;DOI&quot;: &quot;https://dx.doi.org/10.46693/NRSC/10/R2A_LIS4_FMX_STUC00GTD\r\n&quot;
+  },
+  &quot;RelatedUrls&quot;: [
+    {
+      &quot;Description&quot;: &quot;ISRO&apos;s EO data hub&quot;,
+      &quot;URLContentType&quot;: &quot;DistributionURL&quot;,
+      &quot;Type&quot;: &quot;GET DATA VIA DIRECT ACCESS&quot;,
+      &quot;URL&quot;: &quot;https://bhoonidhi.nrsc.gov.in&quot;
+    }
+  ],
+  &quot;ContactPersons&quot;: [
+    {
+      &quot;ContactInformation&quot;: {
+        &quot;Addresses&quot;: [
+          {
+            &quot;City&quot;: &quot;Hyderabad&quot;,
+            &quot;Country&quot;: &quot;India&quot;,
+            &quot;PostalCode&quot;: &quot;500037&quot;,
+            &quot;StateProvince&quot;: &quot;Telangana&quot;,
+            &quot;StreetAddresses&quot;: [
+              &quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;
+            ]
+          }
+        ],
+        &quot;ContactMechanisms&quot;: [
+          {
+            &quot;Type&quot;: &quot;Email&quot;,
+            &quot;Value&quot;: &quot;manjusarma_s@nrsc.gov.in&quot;
+          },
+          {
+            &quot;Type&quot;: &quot;Telephone&quot;,
+            &quot;Value&quot;: &quot;+91-40-23884439&quot;
+          }
+        ]
+      },
+      &quot;FirstName&quot;: &quot;Ms.&quot;,
+      &quot;LastName&quot;: &quot;Sarma&quot;,
+      &quot;MiddleName&quot;: &quot;Manju&quot;,
+      &quot;Roles&quot;: [
+        &quot;Metadata Author&quot;
+      ]
+    }
+  ],
+  &quot;AccessConstraints&quot;: {
+    &quot;Description&quot;: &quot;Download the product&quot;
+  },
+  &quot;SpatialExtent&quot;: {
+    &quot;GranuleSpatialRepresentation&quot;: &quot;NO_SPATIAL&quot;
+  },
+  &quot;ArchiveAndDistributionInformation&quot;: {
+    &quot;FileDistributionInformation&quot;: [
+      {
+        &quot;Format&quot;: &quot;TIFF&quot;,
+        &quot;FormatType&quot;: &quot;Native&quot;,
+        &quot;Media&quot;: [
+          &quot;FTP&quot;
+        ],
+        &quot;AverageFileSize&quot;: 1.8,
+        &quot;AverageFileSizeUnit&quot;: &quot;GB&quot;
+      }
+    ]
+  },
+  &quot;ScienceKeywords&quot;: [
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+      &quot;Term&quot;: &quot;SURFACE RADIATIVE PROPERTIES&quot;,
+      &quot;VariableLevel1&quot;: &quot;REFLECTANCE&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+      &quot;Term&quot;: &quot;EROSION/SEDIMENTATION&quot;,
+      &quot;VariableLevel1&quot;: &quot;LANDSLIDES&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+      &quot;Term&quot;: &quot;EROSION/SEDIMENTATION&quot;,
+      &quot;VariableLevel1&quot;: &quot;SEDIMENTS&quot;
+    },
+    {
+      &quot;Category&quot;: &quot;EARTH SCIENCE&quot;,
+      &quot;Topic&quot;: &quot;LAND SURFACE&quot;,
+      &quot;Term&quot;: &quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,
+      &quot;VariableLevel1&quot;: &quot;FLUVIAL LANDFORMS&quot;,
+      &quot;VariableLevel2&quot;: &quot;ISLAND&quot;
+    }
+  ],
+  &quot;Quality&quot;: &quot;Validation Completed&quot;,
+  &quot;EntryTitle&quot;: &quot;Resourcesat 2A LIS4 FMX Standard Products&quot;,
+  &quot;CollectionProgress&quot;: &quot;COMPLETE&quot;,
+  &quot;PaleoTemporalCoverages&quot;: [
+    {
+      &quot;StartDate&quot;: &quot;2017-01-06&quot;
+    }
+  ],
+  &quot;UseConstraints&quot;: {
+    &quot;Description&quot;: &quot;Non Commercial, Scientific use&quot;,
+    &quot;FreeAndOpenData&quot;: true
+  },
+  &quot;TemporalKeywords&quot;: [
+    &quot;Weekly - &lt; Monthly&quot;
+  ],
+  &quot;AncillaryKeywords&quot;: [
+    &quot;Vegetation&quot;,
+    &quot;Resourcesat&quot;,
+    &quot;LISS3&quot;
+  ],
+  &quot;ProcessingLevel&quot;: {
+    &quot;Id&quot;: &quot;1C&quot;
+  },
+  &quot;Platforms&quot;: [
+    {
+      &quot;Type&quot;: &quot;Earth Observation Satellites&quot;,
+      &quot;ShortName&quot;: &quot;IRS-R2A&quot;,
+      &quot;LongName&quot;: &quot;Indian Remote Sensing Satellite-R2A&quot;,
+      &quot;Instruments&quot;: [
+        {
+          &quot;ShortName&quot;: &quot;OPS&quot;,
+          &quot;LongName&quot;: &quot;Optical Sensor&quot;
+        }
+      ]
+    }
+  ],
+  &quot;Projects&quot;: [
+    {
+      &quot;ShortName&quot;: &quot;NRSC-UOPS&quot;,
+      &quot;LongName&quot;: &quot;National Remote Sensing Centre - User Order Processing System&quot;
+    }
+  ],
+  &quot;Version&quot;: &quot;1.0&quot;,
+  &quot;TemporalExtents&quot;: [
+    {
+      &quot;EndsAtPresentFlag&quot;: false,
+      &quot;RangeDateTimes&quot;: [
+        {
+          &quot;BeginningDateTime&quot;: &quot;2017-01-06T00:00:00.000Z&quot;
+        }
+      ]
+    }
+  ],
+  &quot;DataCenters&quot;: [
+    {
+      &quot;Roles&quot;: [
+        &quot;ARCHIVER&quot;,
+        &quot;DISTRIBUTOR&quot;
+      ],
+      &quot;ShortName&quot;: &quot;IN/ISRO/NDC&quot;,
+      &quot;LongName&quot;: &quot;NRSC Data Center&quot;,
+      &quot;ContactInformation&quot;: {
+        &quot;RelatedUrls&quot;: [
+          {
+            &quot;URLContentType&quot;: &quot;DataCenterURL&quot;,
+            &quot;Type&quot;: &quot;HOME PAGE&quot;,
+            &quot;URL&quot;: &quot;https://nrsc.gov.in/&quot;
+          }
+        ]
+      },
+      &quot;ContactPersons&quot;: [
+        {
+          &quot;ContactInformation&quot;: {
+            &quot;Addresses&quot;: [
+              {
+                &quot;City&quot;: &quot;Hyderabad&quot;,
+                &quot;Country&quot;: &quot;India&quot;,
+                &quot;PostalCode&quot;: &quot;500037&quot;,
+                &quot;StateProvince&quot;: &quot;Telangana&quot;,
+                &quot;StreetAddresses&quot;: [
+                  &quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;
+                ]
+              }
+            ],
+            &quot;ContactMechanisms&quot;: [
+              {
+                &quot;Type&quot;: &quot;Email&quot;,
+                &quot;Value&quot;: &quot;data@nrsc.gov.in&quot;
+              },
+              {
+                &quot;Type&quot;: &quot;Fax&quot;,
+                &quot;Value&quot;: &quot;+91-40-23884424&quot;
+              },
+              {
+                &quot;Type&quot;: &quot;Telephone&quot;,
+                &quot;Value&quot;: &quot;+91-40-23884423&quot;
+              }
+            ]
+          },
+          &quot;FirstName&quot;: &quot;Dr.&quot;,
+          &quot;LastName&quot;: &quot;Aparna&quot;,
+          &quot;MiddleName&quot;: &quot;N.&quot;,
+          &quot;Roles&quot;: [
+            &quot;Data Center Contact&quot;
+          ]
+        }
+      ]
+    }
+  ],
+  &quot;MetadataSpecification&quot;: {
+    &quot;URL&quot;: &quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,
+    &quot;Name&quot;: &quot;UMM-C&quot;,
+    &quot;Version&quot;: &quot;1.17.3&quot;
+  },
+  &quot;DataLanguage&quot;: &quot;eng&quot;,
+  &quot;StandardProduct&quot;: false,
+  &quot;PublicationReferences&quot;: [
+    {
+      &quot;DOI&quot;: {
+        &quot;DOI&quot;: &quot;https://dx.doi.org/10.46693/NRSC/10/R2A_LIS4_FMX_STUC00GTD&quot;
+      }
+    }
+  ]
+}</result><result concept-id="C1235641681-ISRO" revision-id="12" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat 2 AWIFS Standard Products&quot;,&quot;Title&quot;:&quot;RS2_AWIF_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2016-03-28T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:11:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;RS2_AWIF_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The coarse resolution multi-spectral sensor, AWIFS operates in four spectral bands - B2, B3, B4, B5 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 56m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/RS2_AWIF_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1235641681-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;HTTP&quot;],&quot;AverageFileSize&quot;:2.5,&quot;AverageFileSizeUnit&quot;:&quot;GB&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat 2 AWIFS Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2011-05-08&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-RS2&quot;,&quot;ShortName&quot;:&quot;IRS-RS2&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2011-05-08T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;http://www.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result><result concept-id="C1235641695-ISRO" revision-id="12" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat 2 LIS3 Standard Products&quot;,&quot;Title&quot;:&quot;RS2_LIS3_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2016-03-28T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:11:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;RS2_LIS3_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The medium resolution multi-spectral sensor, LISS-3 operates in four spectral bands - B2, B3, B4 in visible near infrared (VNIR) and B5 in Short Wave Infrared \r\n(SWIR) providing data with 23.5m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/RS2_LIS3_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1235641695-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;Roles&quot;:[&quot;Metadata Author&quot;],&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;ContactInformation&quot;:{&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}],&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;],&quot;City&quot;:&quot;Hyderabad&quot;,&quot;PostalCode&quot;:&quot;500037&quot;}]}}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;HTTP&quot;],&quot;AverageFileSize&quot;:450,&quot;AverageFileSizeUnit&quot;:&quot;MB&quot;}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat 2 LIS3 Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2011-05-08&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Type&quot;:&quot;Earth Observation Satellites&quot;,&quot;ShortName&quot;:&quot;IRS-RS2&quot;,&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-RS2&quot;,&quot;Instruments&quot;:[{&quot;ShortName&quot;:&quot;OPS&quot;,&quot;LongName&quot;:&quot;Optical Sensor&quot;}]}],&quot;Projects&quot;:[{&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;,&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2011-05-08T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;http://www.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;Roles&quot;:[&quot;Data Center Contact&quot;],&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;ContactInformation&quot;:{&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}],&quot;Addresses&quot;:[{&quot;Country&quot;:&quot;India&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;],&quot;City&quot;:&quot;Hyderabad&quot;,&quot;PostalCode&quot;:&quot;500037&quot;}],&quot;RelatedUrls&quot;:[{&quot;URLContentType&quot;:&quot;DataContactURL&quot;,&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;https://nrsc.gov.in/&quot;}]}}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result><result concept-id="C1235641830-ISRO" revision-id="12" format="application/vnd.nasa.cmr.umm+json;version=1.17.3">{&quot;CollectionCitations&quot;:[{&quot;Creator&quot;:&quot;NRSC&quot;,&quot;Editor&quot;:&quot;NRSC&quot;,&quot;OnlineResource&quot;:{&quot;Linkage&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;},&quot;Publisher&quot;:&quot;NRSC&quot;,&quot;ReleasePlace&quot;:&quot;Hyderabad&quot;,&quot;SeriesName&quot;:&quot;Resourcesat 2 LIS4 FMX Standard Products&quot;,&quot;Title&quot;:&quot;RS2_LIS4_FMX_STUC00GTD&quot;,&quot;Version&quot;:&quot;1.0&quot;}],&quot;LocationKeywords&quot;:[{&quot;Category&quot;:&quot;CONTINENT&quot;,&quot;Subregion1&quot;:&quot;SOUTHCENTRAL ASIA&quot;,&quot;Subregion2&quot;:&quot;INDIA&quot;,&quot;Type&quot;:&quot;ASIA&quot;}],&quot;MetadataDates&quot;:[{&quot;Type&quot;:&quot;CREATE&quot;,&quot;Date&quot;:&quot;2016-03-28T00:00:00.000Z&quot;},{&quot;Type&quot;:&quot;UPDATE&quot;,&quot;Date&quot;:&quot;2024-01-18T19:11:00.000Z&quot;}],&quot;ISOTopicCategories&quot;:[&quot;IMAGERY/BASE MAPS/EARTH COVER&quot;],&quot;ShortName&quot;:&quot;RS2_LIS4_FMX_STUC00GTD&quot;,&quot;Abstract&quot;:&quot;The coarse resolution multi-spectral sensor, LIS4 FMX operates in four spectral bands - B2, B3, B4, B5 in visible near infrared (VNIR) and B5 in Short Wave Infrared (SWIR) providing data with 5.8m resolution. Standard products are full scene (path-row) based geo-referenced as well as geo-orthokit  products.&quot;,&quot;DirectoryNames&quot;:[{&quot;ShortName&quot;:&quot;ISRO/UOPS&quot;}],&quot;Purpose&quot;:&quot;The dataset id provides data for integrated land and water resources management at micro level, with improved spectral and spatial coverage. This data also supports many projects in diversified fields of applications like agricultural \r\ncrop discrimination and monitoring, crop acreage / yield estimation, precision farming, water resources, forest mapping, infrastructure development, disaster management, snow and glacier studies, coastal zone management, urban landscape, locating groundwater potential zones etc,.&quot;,&quot;DOI&quot;:{&quot;DOI&quot;:&quot;https://dx.doi.org/10.46693/NRSC/10/RS2_LIS4_FMX_STUC00GTD&quot;},&quot;RelatedUrls&quot;:[{&quot;Description&quot;:&quot;ISRO&apos;s EO data hub&quot;,&quot;Type&quot;:&quot;GET DATA&quot;,&quot;URL&quot;:&quot;https://bhoonidhi.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;},{&quot;Description&quot;:&quot;Granule Search URL for the Collection&quot;,&quot;GetData&quot;:{&quot;Format&quot;:&quot;XML&quot;,&quot;MimeType&quot;:&quot;application/opensearchdescription+xml&quot;,&quot;Size&quot;:15,&quot;Unit&quot;:&quot;KB&quot;},&quot;Subtype&quot;:&quot;OpenSearch&quot;,&quot;Type&quot;:&quot;GET CAPABILITIES&quot;,&quot;URL&quot;:&quot;https://cmr.earthdata.nasa.gov/opensearch/granules/descriptor_document.xml?collectionConceptId=C1235641830-ISRO&quot;,&quot;URLContentType&quot;:&quot;DistributionURL&quot;}],&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, Software Group, DPPA and WAA,NRSC,Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;manjusarma_s@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884439&quot;}]},&quot;FirstName&quot;:&quot;Ms.&quot;,&quot;LastName&quot;:&quot;Sarma&quot;,&quot;MiddleName&quot;:&quot;Manju&quot;,&quot;Roles&quot;:[&quot;Metadata Author&quot;]}],&quot;AccessConstraints&quot;:{&quot;Description&quot;:&quot;Download the Product&quot;},&quot;SpatialExtent&quot;:{&quot;GranuleSpatialRepresentation&quot;:&quot;NO_SPATIAL&quot;,&quot;HorizontalSpatialDomain&quot;:{&quot;Geometry&quot;:{&quot;BoundingRectangles&quot;:[{&quot;EastBoundingCoordinate&quot;:180,&quot;NorthBoundingCoordinate&quot;:90,&quot;SouthBoundingCoordinate&quot;:-90,&quot;WestBoundingCoordinate&quot;:-180}],&quot;CoordinateSystem&quot;:&quot;CARTESIAN&quot;}},&quot;SpatialCoverageType&quot;:&quot;HORIZONTAL&quot;},&quot;ArchiveAndDistributionInformation&quot;:{&quot;FileDistributionInformation&quot;:[{&quot;AverageFileSize&quot;:1.8,&quot;AverageFileSizeUnit&quot;:&quot;GB&quot;,&quot;Format&quot;:&quot;TIFF&quot;,&quot;FormatType&quot;:&quot;Native&quot;,&quot;Media&quot;:[&quot;FTP&quot;]}]},&quot;ScienceKeywords&quot;:[{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;SURFACE RADIATIVE PROPERTIES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;REFLECTANCE&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;LANDSLIDES&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;EROSION/SEDIMENTATION&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;SEDIMENTS&quot;},{&quot;Category&quot;:&quot;EARTH SCIENCE&quot;,&quot;Term&quot;:&quot;GEOMORPHIC LANDFORMS/PROCESSES&quot;,&quot;Topic&quot;:&quot;LAND SURFACE&quot;,&quot;VariableLevel1&quot;:&quot;FLUVIAL LANDFORMS&quot;,&quot;VariableLevel2&quot;:&quot;ISLAND&quot;}],&quot;Quality&quot;:&quot;Validation Completed&quot;,&quot;EntryTitle&quot;:&quot;Resourcesat 2 LIS4 FMX Standard Products&quot;,&quot;CollectionProgress&quot;:&quot;COMPLETE&quot;,&quot;PaleoTemporalCoverages&quot;:[{&quot;StartDate&quot;:&quot;2011-05-08&quot;}],&quot;UseConstraints&quot;:{&quot;Description&quot;:&quot;Non Commercial, Scientific use&quot;,&quot;FreeAndOpenData&quot;:true},&quot;TemporalKeywords&quot;:[&quot;Weekly - \u003c Monthly&quot;],&quot;AncillaryKeywords&quot;:[&quot;Vegetation&quot;,&quot;Resourcesat&quot;,&quot;LISS3&quot;],&quot;ProcessingLevel&quot;:{&quot;Id&quot;:&quot;1C&quot;},&quot;Platforms&quot;:[{&quot;Instruments&quot;:[{&quot;LongName&quot;:&quot;Optical Sensor&quot;,&quot;ShortName&quot;:&quot;OPS&quot;}],&quot;LongName&quot;:&quot;Indian Remote Sensing Satellite-RS2&quot;,&quot;ShortName&quot;:&quot;IRS-RS2&quot;,&quot;Type&quot;:&quot;Earth Observation Satellites&quot;}],&quot;Projects&quot;:[{&quot;LongName&quot;:&quot;National Remote Sensing Centre - User Order Processing System&quot;,&quot;ShortName&quot;:&quot;NRSC-UOPS&quot;}],&quot;Version&quot;:&quot;1.0&quot;,&quot;TemporalExtents&quot;:[{&quot;EndsAtPresentFlag&quot;:false,&quot;RangeDateTimes&quot;:[{&quot;BeginningDateTime&quot;:&quot;2011-05-08T00:00:00.000Z&quot;}]}],&quot;DataCenters&quot;:[{&quot;ContactInformation&quot;:{&quot;RelatedUrls&quot;:[{&quot;Type&quot;:&quot;HOME PAGE&quot;,&quot;URL&quot;:&quot;http://www.nrsc.gov.in&quot;,&quot;URLContentType&quot;:&quot;DataCenterURL&quot;}]},&quot;ContactPersons&quot;:[{&quot;ContactInformation&quot;:{&quot;Addresses&quot;:[{&quot;City&quot;:&quot;Hyderabad&quot;,&quot;Country&quot;:&quot;India&quot;,&quot;PostalCode&quot;:&quot;500037&quot;,&quot;StateProvince&quot;:&quot;Telangana&quot;,&quot;StreetAddresses&quot;:[&quot;Group Head, NDC, DPPA and WAA, NRSC, Balanagar&quot;]}],&quot;ContactMechanisms&quot;:[{&quot;Type&quot;:&quot;Email&quot;,&quot;Value&quot;:&quot;data@nrsc.gov.in&quot;},{&quot;Type&quot;:&quot;Fax&quot;,&quot;Value&quot;:&quot;+91-40-23884424&quot;},{&quot;Type&quot;:&quot;Telephone&quot;,&quot;Value&quot;:&quot;+91-40-23884423&quot;}]},&quot;FirstName&quot;:&quot;Dr.&quot;,&quot;LastName&quot;:&quot;Aparna&quot;,&quot;MiddleName&quot;:&quot;N.&quot;,&quot;Roles&quot;:[&quot;Data Center Contact&quot;]}],&quot;LongName&quot;:&quot;NRSC Data Center&quot;,&quot;Roles&quot;:[&quot;ARCHIVER&quot;,&quot;DISTRIBUTOR&quot;],&quot;ShortName&quot;:&quot;IN/ISRO/NDC&quot;}],&quot;MetadataSpecification&quot;:{&quot;URL&quot;:&quot;https://cdn.earthdata.nasa.gov/umm/collection/v1.17.3&quot;,&quot;Name&quot;:&quot;UMM-C&quot;,&quot;Version&quot;:&quot;1.17.3&quot;},&quot;DataLanguage&quot;:&quot;eng&quot;,&quot;StandardProduct&quot;:false}</result></results>
