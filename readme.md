@@ -393,6 +393,47 @@ Pura flow theek lage to `count` hata do ya dates badha do.
 
 ---
 
+## ✅ Verified working (01-Sep-2026)
+
+Windows 11 + PowerShell + Python 3.14 par poora flow successfully chal gaya:
+
+```
+Login Successful. Hello zwiter07!
+[1/2] Downloading: 3RIMG_01SEP2026_0715_L2B_SST_V02R00.h5 | File Size: 16.26 MB
+Progress: 100%|##########| 16.3M/16.3M [00:18<00:00, 1.90MB/s]
+[2/2] Downloading: 3RIMG_01SEP2026_0645_L2B_SST_V02R00.h5 | File Size: 16.33 MB
+Download Complete!
+Total No. of Files Downloaded: 2
+Total Time Taken: 32.48 sec
+Logout Successful. Goodbye zwiter07!
+```
+
+**Datasets jo live hain:** `3RIMG_L2B_SST` (INSAT-3DR SST), `3SIMG_L1B_STD` (INSAT-3S L1B),
+`3RIMG_L1B_STD` (INSAT-3DR L1B). Ek file ≈ **16 MB**, ek din ≈ **44 files ≈ 720 MB**.
+
+### Agla download kaise karein
+
+```powershell
+# Pure din ke saare files (~44 files, ~720 MB)
+python run.py download --start 2026-09-01 --end 2026-09-01
+
+# 3 din
+python run.py download --start 2026-08-29 --end 2026-09-01
+
+# Doosra dataset
+python run.py download --dataset 3SIMG_L1B_STD --start 2026-09-01 --end 2026-09-01
+
+# Sirf India region (bounding box)
+python run.py download --bbox "68.0,6.0,90.0,30.0" --start 2026-09-01 --end 2026-09-01
+
+# Background (Y/N prompt nahi, PC chalu rakho)
+python run.py download --start 2026-09-01 --end 2026-09-01 --yes
+```
+
+> ⚠️ Daily limit **5000 files/day** — ek din ke 44 files me koi dikkat nahi.
+
+---
+
 ## 🔌 API Endpoints (reference)
 
 | Purpose | Method | Endpoint | Auth |
