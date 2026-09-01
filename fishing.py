@@ -166,6 +166,14 @@ def build_html(maps, grids, spots, meta, out_html):
         f"<td>{verdict(s['score'])[1]}</td></tr>"
         for i, s in enumerate(spots))
 
+    name_u = str(meta['source']).upper()
+    synth = ("DEMO" in name_u) or ("TEST" in name_u) or ("FAKE" in name_u)
+    badge = ("<span style='background:#ef444433;color:#ef4444;padding:2px 9px;border-radius:10px;"
+             "font-size:12px;font-weight:700'>NAKLI (DEMO) DATA - test ke liye</span>"
+             if synth else
+             "<span style='background:#22c55e33;color:#22c55e;padding:2px 9px;border-radius:10px;"
+             "font-size:12px;font-weight:700'>ASLI DATA - MOSDAC/INSAT-3DR</span>")
+
     html = f"""<!doctype html><html><head><meta charset="utf-8">
 <title>MOSDAC Fishing Advisory</title>
 <style>
@@ -193,7 +201,7 @@ td{{padding:5px 6px;border-bottom:1px solid #263244}}
 footer{{padding:12px 24px;color:#64748b;font-size:12px}}
 </style></head><body>
 <header><h1>MOSDAC Fishing Advisory</h1>
-<div class="sub">{meta['source']} | region {meta['region']} | {meta['time']}</div>
+<div class="sub">{badge} &nbsp; file: <b>{meta['source']}</b> | region {meta['region']} | acq: {meta['time']}</div>
 <div class="sub">Map pe <b>click</b> karo - us jagah ka SST, thermal front aur "jana chahiye ya nahi" milega</div>
 </header>
 <div class="wrap">
