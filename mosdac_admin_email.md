@@ -142,6 +142,42 @@ Regards,
 
 ---
 
+## ✉️ Mail Body — Option E (429 rate_limit_exceeded bar-bar aa raha hai) ⭐ abhi ke liye ye bhejo
+
+> **Subject:** Persistent HTTP 429 "rate_limit_exceeded" on Data Download API — MOSDAC user `<your_username>`
+
+```
+Respected Sir/Madam,
+
+I am trying to download data through the MOSDAC Data Download API (mdapi.py) but the
+token endpoint keeps returning HTTP 429 even though I have not downloaded a single file.
+
+Details:
+  - Endpoint : POST https://mosdac.gov.in/download_api/gettoken
+  - Response : {"error":"rate_limit_exceeded","message":"[WARNING]: Download Limit
+                Exceeded (300 Downloads Allowed Per Minute). Waiting 20 seconds
+                before Retrying...", "type":"minute_limit"}
+  - Frequency: continuous since <DD-MM-YYYY HH:MM> IST (more than <N> hours)
+  - Retries tried: after 30s / 60s / 90s / 10 min / 1 hour - same 429 every time
+  - Files downloaded by me so far: 0 (zero) - so this is not my daily/minute quota
+  - My account: <your_username> (approved)
+  - Network / IP: <home/college network, city>
+
+Search API (GET https://mosdac.gov.in/apios/datasets.json) works fine - only the
+/download_api/ endpoints return 429.
+
+Kindly check whether there is a server-side rate limit / outage on the download_api
+service, and reset my quota or advise. Attaching the console output for reference.
+
+Regards,
+<Your Name> | <Organisation> | +91-XXXXXXXXXX | <Email>
+```
+
+> 📎 Is mail ke saath `python run.py login` ka **poora output** attach kar do (screenshot ya
+> `error_logs/mdapi_console.log` file).
+
+---
+
 ## 📎 Attachments (jab bhi relevant ho)
 
 - [ ] Error log: `error_logs/DD-MM-YYYY_error.log` (agar koi error aaya hai)
