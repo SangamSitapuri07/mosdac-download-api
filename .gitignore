@@ -33,3 +33,10 @@ id_rsa*
 id_ed25519*
 sync.sh
 .gitconfig
+
+# Junk / generated
+.cache/
+uploads/
+out/demo_*
+out/*.csv
+out/*.png
