@@ -276,6 +276,61 @@ Logout Successful. Goodbye <username>!
 
 ---
 
+## 🛠️ Toolkit — data ko kaam me lao (ek command me sab kuch)
+
+Files download kar ke kya karein? `toolkit.py` sab khud kar deta hai:
+**API se data lao → `.h5` padho → map image + CSV + Excel + HTML dashboard banao.**
+
+```powershell
+pip install h5py numpy matplotlib pandas openpyxl
+```
+
+```powershell
+python toolkit.py --demo
+```
+(pehle ye chalao — bina credentials ke, synthetic data se output dikhayega)
+
+```powershell
+python toolkit.py --start 2026-09-01 --end 2026-09-01 --max 3
+```
+
+```powershell
+python toolkit.py --local data
+```
+(pehle se download hui `.h5` files se bana lega, koi API call nahi)
+
+**Output (`out/` folder me):**
+
+| File | Kya hai |
+|---|---|
+| `dashboard.html` | browser me kholo — maps + statistics, ek hi jagah |
+| `*_map.png` | SST/image ka map (lon-lat ke saath) |
+| `*.csv` | `lon,lat,value` table (Excel me khul jayega) |
+| `summary.xlsx` | har file ka min/max/mean/std |
+| `summary.json` | machine-readable stats |
+
+**Options:** `--dataset 3SIMG_L1B_STD` · `--max 10` · `--no-maps` · `--start/--end`
+
+> Toolkit HDF5 ke andar SST/Lat/Lon datasets khud dhoondh leta hai aur
+> `scale_factor` / `add_offset` / `_FillValue` bhi apply karta hai.
+
+### Apne code me direct API (mdapi.py ke bina)
+
+```python
+from mosdac_client import Mosdac
+
+m = Mosdac()                                        # credentials .env se
+files = m.search("3RIMG_L2B_SST", "2026-09-01", "2026-09-01")["entries"]
+data  = m.download_bytes(files[0]["id"])            # seedha RAM me
+f     = m.read_h5(files[0]["id"])                   # h5py object, disk pe kuch nahi
+m.logout()
+```
+
+Methods: `login()` · `search()` · `search_all()` · `download_bytes()` · `download_file()` ·
+`download_stream()` · `read_h5()` · `logout()`
+
+---
+
 ## 🧪 Test kaise karein (4 levels)
 
 ### Level 0 — Full API test report (ek command me sab endpoints)
