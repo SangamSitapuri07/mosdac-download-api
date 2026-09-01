@@ -139,19 +139,74 @@ class Mosdac:
         return out
 
     # ---------------- download ----------------
-    def download_bytes(self, record_id):
-        """File ko seedha memory me lao (disk pe save kiye bina)."""
-        r = requests.get(DOWNLOAD_URL,
-                         headers={"Authorization": f"Bearer {self._token()}"},
-                         params={"id": record_id}, stream=True, timeout=self.timeout)
-        if r.status_code in (401, 403) and self.refresh_token:
-            self.refresh()
-            r = requests.get(DOWNLOAD_URL,
-                             headers={"Authorization": f"Bearer {self.access_token}"},
-                             params={"id": record_id}, stream=True, timeout=self.timeout)
-        if r.status_code != 200:
-            raise MosdacError(f"download failed: HTTP {r.status_code} | {r.text[:200]}")
-        return r.content
+    def _stream_once(self, record_id, start_at):
+        hdr = {"Authorization": f"Bearer {self._token()}"}
+        if start_at:
+            hdr["Range"] = f"bytes={start_at}-"          # resume: wahin se aage
+        return requests.get(DOWNLOAD_URL, headers=hdr, params={"id": record_id},
+                            stream=True, timeout=self.timeout)
+
+    def download_bytes(self, record_id, max_attempts=5, verbose=True):
+        """
+        File ko seedha memory me lao (disk pe save nahi).
+        Connection beech me tute to RESUME (HTTP Range) + retry karta hai.
+        """
+        import time as _t
+        got = b""
+        total = None
+        last_err = None
+
+        for attempt in range(max_attempts):
+            try:
+                rounds = 0
+                while rounds < 40:                        # resume rounds
+                    rounds += 1
+                    r = self._stream_once(record_id, len(got))
+                    if r.status_code in (401, 403):
+                        self.refresh()
+                        r = self._stream_once(record_id, len(got))
+                    if r.status_code == 416:              # already complete
+                        break
+                    if r.status_code == 200:
+                        got = b""                         # server Range ignore kar raha
+                    elif r.status_code != 206:
+                        raise MosdacError(f"download failed: HTTP {r.status_code} | {r.text[:150]}")
+
+                    cr = r.headers.get("Content-Range", "")
+                    if "/" in cr:
+                        try:
+                            total = int(cr.split("/")[-1])
+                        except Exception:
+                            pass
+                    elif total is None and r.status_code == 200:
+                        try:
+                            total = int(r.headers.get("Content-Length", 0)) or None
+                        except Exception:
+                            pass
+
+                    for chunk in r.iter_content(chunk_size=1024 * 1024):
+                        if chunk:
+                            got += chunk
+
+                    if total is None or len(got) >= total:
+                        break
+                    if verbose:
+                        print(f"      ...{len(got)}/{total} bytes, resuming", flush=True)
+                    _t.sleep(1)
+
+                if total is None or len(got) >= total:
+                    return got
+                last_err = f"incomplete {len(got)}/{total} bytes"
+            except Exception as e:
+                last_err = e
+
+            wait = min(2 * (attempt + 1), 15)
+            if verbose:
+                msg = last_err if isinstance(last_err, str) else type(last_err).__name__
+                print(f"      retry {attempt + 1}/{max_attempts} in {wait}s ({msg})", flush=True)
+            _t.sleep(wait)
+
+        raise MosdacError(f"download failed after {max_attempts} attempts: {last_err}")
 
     def download_file(self, record_id, dest):
         """File ko disk par save karo, path return karo."""

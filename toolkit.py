@@ -350,12 +350,22 @@ def main():
             if ents:
                 m.login()
                 print("[api] login OK\n")
+            cache = Path("data")
+            cache.mkdir(exist_ok=True)
             for e in ents:
-                print(f"  downloading {e['identifier']} ...")
+                name = e["identifier"]
+                cached = cache / name
+                if cached.exists() and cached.stat().st_size > 1000:
+                    print(f"  cached   {name} (pehle se hai)")
+                    sources.append((name, str(cached)))
+                    continue
+                print(f"  downloading {name} ...")
                 try:
-                    sources.append((e["identifier"], m.download_bytes(e["id"])))
-                except MosdacError as ex:
-                    print("    skip:", ex)
+                    blob = m.download_bytes(e["id"])
+                    cached.write_bytes(blob)          # cache: agli baar dobara download nahi
+                    sources.append((name, blob))
+                except Exception as ex:               # network error pe poora script na mare
+                    print(f"    SKIP {name}: {type(ex).__name__}: {ex}")
             if ents:
                 m.logout()
                 print("[api] logged out\n")
