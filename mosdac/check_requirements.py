@@ -16,6 +16,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import platform
 
 SEARCH_URL = "https://mosdac.gov.in/apios/datasets.json"
@@ -123,10 +124,25 @@ def check_login(username, password, do_login):
         record(BAD, "Login/Token API", "username/password missing")
         return None
 
-    try:
-        r = requests.post(TOKEN_URL, json={"username": username, "password": password}, timeout=30)
-    except Exception as e:
-        record(BAD, "Login/Token API (POST /download_api/gettoken)", f"{type(e).__name__}: {e}")
+    # MOSDAC server kabhi-kabhi sabko 429 (rate limit) deta hai -> wait kar ke retry karo
+    r = None
+    delays = [0, 30, 60, 90]
+    for attempt, delay in enumerate(delays):
+        if delay:
+            print(f"    [INFO] Rate limit (429) - {delay} sec wait kar ke dobara try... "
+                  f"(attempt {attempt + 1}/{len(delays)})")
+            time.sleep(delay)
+        try:
+            r = requests.post(TOKEN_URL, json={"username": username, "password": password}, timeout=30)
+        except Exception as e:
+            if attempt == len(delays) - 1:
+                record(BAD, "Login/Token API (POST /download_api/gettoken)", f"{type(e).__name__}: {e}")
+                return None
+            continue
+        if r.status_code != 429:
+            break
+    if r is None:
+        record(BAD, "Login/Token API", "koi response nahi mila")
         return None
 
     if r.status_code == 200:

@@ -143,12 +143,47 @@ def cmd_login(a):
                    "--count", cfg["search_parameters"]["count"] or "3"])
 
 
+def run_mdapi(cwd, logfile):
+    """mdapi.py chalao, live output dikhao aur saath hi log file me likho."""
+    import subprocess
+    with open(logfile, "a", encoding="utf-8", errors="replace") as lf:
+        proc = subprocess.Popen([sys.executable, "mdapi.py"], cwd=cwd,
+                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                text=True, bufsize=1)
+        for line in proc.stdout:
+            print(line, end="", flush=True)
+            lf.write(line)
+        proc.wait()
+        return proc.returncode
+
+
 def cmd_download(a):
     cfg, user, pw = write_config(a)
     if not check_creds(user, pw):
         return 1
     print(f"\n{C['b']}--- Download shuru: mosdac/mdapi.py ---{C['0']}\n")
-    code = run_py("mdapi.py", [], cwd=str(MOSDAC_DIR))
+
+    logfile = ROOT / "error_logs" / "mdapi_console.log"
+    logfile.parent.mkdir(parents=True, exist_ok=True)
+
+    # MOSDAC server kabhi-kabhi 429 (rate limit) deta hai -> wait kar ke retry
+    delays = [0, 60, 120, 180]
+    code = 0
+    for attempt, delay in enumerate(delays):
+        if delay:
+            print(f"\n{C['y']}[INFO]{C['0']} Rate limit (429) laga tha - {delay} sec wait kar ke "
+                  f"dobara try (attempt {attempt + 1}/{len(delays)})...\n")
+            import time as _t
+            _t.sleep(delay)
+        code = run_mdapi(str(MOSDAC_DIR), logfile)
+        tail = ""
+        try:
+            tail = logfile.read_text(encoding="utf-8", errors="replace")[-4000:].lower()
+        except Exception:
+            pass
+        if "rate_limit" in tail or "429" in tail or "download limit exceeded" in tail:
+            continue
+        break
     data_dir = Path(cfg["download_settings"]["download_path"])
     if data_dir.exists():
         files = [p for p in data_dir.rglob("*") if p.is_file()]
