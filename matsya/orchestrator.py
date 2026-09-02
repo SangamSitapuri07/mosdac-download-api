@@ -18,6 +18,7 @@ from .agents.navigation import Navigation
 from .agents.ocean_analytics import OceanAnalytics
 from .agents.policy import PolicyRAG
 from .agents.risk_geofencing import RiskGeofencing
+from .agents.species_agent import SpeciesForecaster
 from .agents.state import AgentState
 from .agents.supervisor import Supervisor
 from .agents.synthesizer import Synthesizer
@@ -28,12 +29,13 @@ AGENTS = {
     "risk_geofencing": RiskGeofencing,
     "navigation": Navigation,
     "policy_rag": PolicyRAG,
+    "species_forecaster": SpeciesForecaster,
     "synthesizer": Synthesizer,
 }
 
 WAVES = [
     ["ocean_analytics", "risk_geofencing"],
-    ["navigation", "policy_rag"],
+    ["navigation", "policy_rag", "species_forecaster"],
     ["synthesizer"],
 ]
 

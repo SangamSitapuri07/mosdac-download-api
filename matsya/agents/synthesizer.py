@@ -28,6 +28,7 @@ class Synthesizer(Agent):
         rk = (state.results.get("risk_geofencing") or {}).get("findings", {})
         nv = (state.results.get("navigation") or {}).get("findings", {})
         pl = (state.results.get("policy_rag") or {}).get("findings", {})
+        sp = (state.results.get("species_forecaster") or {}).get("findings", {})
         pt_o = oa.get("point") or {}
         pt_r = rk.get("point") or {}
 
@@ -72,6 +73,9 @@ class Synthesizer(Agent):
         if nv.get("route_nm"):
             bullets.append(f"🧭 **{nv['from']} se {nv['route_nm']} NM** — ETA {nv['eta_text']}, "
                            f"~{nv['fuel_litres']:.0f} L diesel")
+        for r in (sp.get("species") or [])[:2]:
+            bullets.append(f"🐟 **{r['species']}** ({r['score']:.0f}/100) — "
+                           + "; ".join(r["reasons"][:2]))
         for r in (pl.get("rules") or [])[:3]:
             bullets.append(f"⚖️ **{r['title']}** — {r['text'][:150]}")
         for rsn in (pt_r.get("reasons") or [])[:3]:

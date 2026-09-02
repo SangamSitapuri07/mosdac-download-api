@@ -52,7 +52,7 @@ Detail: [`NOTES.md`](NOTES.md)
 
 ---
 
-## 🤖 Agentic AI (6 agents, real data pe)
+## 🤖 Agentic AI (7 agents, real data pe)
 
 ```powershell
 python matsya.py run --ask "Veraval se 40 km SW tuna ke liye jaaun?"
@@ -66,7 +66,8 @@ python matsya.py serve            # live query console: http://localhost:8000
 | 3 | **Risk & Geofencing** | India EEZ andar/bahar, IMBL proximity, coast distance | nahi |
 | 4 | **Navigation** | A* route — nautical miles, ETA, diesel (real grid par) | nahi |
 | 5 | **Policy RAG** | monsoon ban, IMBL, KMFR, TNMFRA, Odisha turtle, ICG SOPs | optional |
-| 6 | **Synthesizer** | Hinglish advisory + confidence + evidence | optional |
+| 6 | **Species Forecaster** | SST/chl/coast/season se kaunsi machhli (12 species) | nahi |
+| 7 | **Synthesizer** | Hinglish advisory + confidence + evidence | optional |
 
 **ORCA ka rule:** LLM sirf language ke liye; saare numbers deterministic Python me.
 Isliye ye **bina GPU, bina internet, bina LLM ke bhi poora chalta hai**.
@@ -129,12 +130,31 @@ fishing.py         lightweight fishing advisory (SST only)
 
 ---
 
+## 🆕 v2.0 — aur kya kya hai
+
+| Feature | Command | Status |
+|---|---|---|
+| **Multi-file composite** | `--composite` | ✅ real (median over N files — cloud gaps kam) |
+| **Time series + animation GIF** | `--animation` | ✅ real |
+| **Chlorophyll layer** | auto-detect `data/` me CHL/OCM file | ✅ code ready, data pending |
+| **Species prediction** | query me jagah bolo | ✅ rule-based (12 species) |
+| **AIS live vessels** | `--ais` (needs free key) | ✅ code ready, key pending |
+| **GeoJSON export** | automatic `out/matsya.geojson` | ✅ QGIS / Google Earth |
+| **Watch mode** | `matsya.py watch --interval 30` | ✅ auto-update |
+| **Windows one-click** | `MATSYA.bat` | ✅ menu |
+| **Doctor** | `matsya.py doctor` | ✅ environment check |
+
 ## 🎮 Commands
 
 ```powershell
 python matsya.py run                       # poora pipeline (API se real data)
 python matsya.py run --ask "Kochi ke paas machhli kahan milegi?"
 python matsya.py serve                     # live tactical UI + /api/ask (port 8000)
+python matsya.py run --composite --animation   # multi-file + GIF
+python matsya.py run --ais                     # live vessels (AISSTREAM_API_KEY)
+python matsya.py watch --interval 30           # har 30 min me auto-update
+python matsya.py doctor                        # environment check
+MATSYA.bat                                     # Windows menu (one-click)
 python matsya.py run --local data          # local .h5 files se (koi API call nahi)
 python matsya.py run --no-wind             # sirf SST
 python matsya.py ingest --hours 24 --max 5 # sirf download

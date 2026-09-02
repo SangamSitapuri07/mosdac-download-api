@@ -144,6 +144,7 @@ padding:2px 7px;cursor:pointer;font-size:10.5px}}
         <div>🌡️ SST <b id="hSst">—</b> °C</div>
         <div>〰️ Front <b id="hFront">—</b> °C/km</div>
         <div>💨 Wind <b id="hWind">—</b> m/s</div>
+        <div id="chlRow" style="display:none">🌿 CHL <b id="hChl">—</b> mg/m³</div>
         <div>🎯 PFZ <b id="hPfz">—</b></div>
         <div>🗺️ <b id="hZone">—</b></div>
       </div>
@@ -192,7 +193,7 @@ padding:2px 7px;cursor:pointer;font-size:10.5px}}
 
   <div class="panel">
     <h3>Agent swarm mesh <span style="color:#64748b" id="tot">—</span></h3>
-    <svg id="mesh" width="100%" height="188" viewBox="0 0 420 188"></svg>
+    <svg id="mesh" width="100%" height="200" viewBox="0 0 460 200"></svg>
   </div>
 
   <div class="panel">
@@ -229,7 +230,7 @@ weather, Coast Guard notices aur monsoon ban check karein.
 <script>
 const LAT={_enc(g.get('lat'))},LON={_enc(g.get('lon'))},SST={_enc(g.get('sst'))},
  WIND={_enc(g.get('wind'))},GRAD={_enc(g.get('grad'))},PFZ={_enc(g.get('score'))},
- DIST={_enc(g.get('dist'))},EEZ={_enc(g.get('eez'),600)};
+ DIST={_enc(g.get('dist'))},EEZ={_enc(g.get('eez'),600)},CHL={_enc(g.get('chl'))};
 const RINGS={eez_json};
 const IMGS=["data:image/png;base64,{b64(sst_png)}","data:image/png;base64,{b64(wind_png)}",
  "data:image/png;base64,{b64(pfz_png)}"];
@@ -302,6 +303,8 @@ function showHud(i,j){{
   document.getElementById('hSst').textContent=gv(SST)?.toFixed(2)??'—';
   document.getElementById('hFront').textContent=gv(GRAD)?.toFixed(3)??'—';
   document.getElementById('hWind').textContent=gv(WIND)?.toFixed(1)??'—';
+  if(CHL&&CHL[i][j]!==null){{document.getElementById('chlRow').style.display='block';
+   document.getElementById('hChl').textContent=CHL[i][j].toFixed(3);}}
   document.getElementById('hPfz').textContent=gv(PFZ)?.toFixed(0)??'—';
   document.getElementById('hZone').textContent=eezOf(LON[i][j],LAT[i][j])||'High Seas';}}
 img.addEventListener('click',e=>{{const[i,j]=cell(e);showHud(i,j);}});
@@ -310,12 +313,13 @@ function toggleRoute(){{showRoute=!showRoute;}}
 function fly(la,lo){{document.getElementById('q').value=la.toFixed(3)+' '+lo.toFixed(3)+' pe fishing kaisi rahegi?';ask();}}
 
 /* ---------- agent swarm mesh (SVG) ---------- */
-const AG=[["supervisor",210,26],["ocean_analytics",60,86],["risk_geofencing",210,86],
- ["navigation",360,86],["policy_rag",120,146],["synthesizer",300,146]];
+const AG=[["supervisor",210,24],["ocean_analytics",58,80],["risk_geofencing",210,80],
+ ["navigation",362,80],["policy_rag",80,140],["species_forecaster",215,140],
+ ["synthesizer",360,140]];
 const EDGES=[["supervisor","ocean_analytics"],["supervisor","risk_geofencing"],
  ["supervisor","navigation"],["ocean_analytics","synthesizer"],
  ["risk_geofencing","synthesizer"],["navigation","synthesizer"],
- ["policy_rag","synthesizer"]];
+ ["policy_rag","synthesizer"],["species_forecaster","synthesizer"]];
 function mesh(activeSet){{
   const s=document.getElementById('mesh');s.innerHTML='';
   const NS='http://www.w3.org/2000/svg';

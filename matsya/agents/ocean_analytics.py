@@ -24,9 +24,10 @@ class OceanAnalytics(Agent):
         g = state.grids
         sst, grad, lat, lon = g["sst"], g["grad"], g["lat"], g["lon"]
         wind, dist, eez = g.get("wind"), g.get("dist"), g.get("eez")
+        chl = g.get("chl")
         cfg = state.meta["cfg"]
 
-        score = P.pfz_score(sst, grad, eez, dist, wind, cfg)
+        score = P.pfz_score(sst, grad, eez, dist, wind, cfg, chl=chl)
         state.grids["score"] = score
 
         valid = int(np.isfinite(sst).sum())
@@ -41,6 +42,9 @@ class OceanAnalytics(Agent):
             "pfz_max": round(float(np.nanmax(score)), 1),
             "strong_front_pixels": int((grad >= cfg["physics"]["front_ref_c_per_km"]).sum()),
         }
+        if chl is not None:
+            f.update({"chl_mean_mg_m3": round(float(np.nanmean(chl)), 3),
+                      "chl_max_mg_m3": round(float(np.nanmax(chl)), 3)})
         if wind is not None:
             f.update({"wind_mean_ms": round(float(np.nanmean(wind)), 2),
                       "wind_max_ms": round(float(np.nanmax(wind)), 2)})
@@ -48,6 +52,9 @@ class OceanAnalytics(Agent):
         ev = [self.ev("sst", "SST range", f"{f['sst_min_c']}–{f['sst_max_c']} °C",
                       state.meta.get("sst_file", "")),
               self.ev("front", "Max thermal front", f"{f['front_max_c_per_km']} °C/km", "computed")]
+        if chl is not None:
+            ev.append(self.ev("chl", "Chlorophyll (mean)",
+                              f"{f['chl_mean_mg_m3']} mg/m³", state.meta.get("chl_file", "")))
         if wind is not None:
             ev.append(self.ev("wind", "Wind max", f"{f['wind_max_ms']} m/s",
                               state.meta.get("wind_file", "")))
@@ -62,6 +69,7 @@ class OceanAnalytics(Agent):
                   "front_c_per_km": round(float(grad[i, j]), 4) if np.isfinite(grad[i, j]) else None,
                   "wind_ms": round(w, 1) if w else None,
                   "pfz": round(float(score[i, j]), 1) if np.isfinite(score[i, j]) else None,
+                  "chl_mg_m3": round(float(chl[i, j]), 3) if chl is not None and np.isfinite(chl[i, j]) else None,
                   "idx": (i, j)}
             if w is not None:
                 pt["sea_state"] = P.sea_state_label(w, cfg)[0]

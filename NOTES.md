@@ -28,7 +28,13 @@
 
 ## ⏳ PENDING — data uplabdh nahi (complete karna hai)
 
-### 1. 🔴 Chlorophyll-a (sabse important missing layer)
+### 1. 🟡 Chlorophyll-a — **CODE READY, DATA PENDING**
+- `matsya/chlorophyll.py` ban gaya hai: `data/` me koi bhi file jiske naam me
+  `CHL` / `CHLA` / `OCM` ho → auto load (HDF5 / NetCDF / GeoTIFF)
+- Chlorophyll milega to PFZ score me **17 weight** automatically jud jayega
+- **Karna hai:** Bhuvan/NRSC ya Copernicus/NASA OceanColor se file download karke
+  `data/` me daalna — bas! Koi code change nahi chahiye
+- Test kiya gaya (fixture se): score me chlorophyll sahi se use ho raha hai
 - **Kya chahiye:** Oceansat/EOS-06 OCM chlorophyll concentration (mg/m³)
 - **Kyun:** PFZ ka doosra aadha hissa — fish wahan jama hote hain jahan chlorophyll zyada
 - **Status:** MOSDAC API me **maujood nahi**
@@ -135,14 +141,25 @@ Har run ki **execution_audit.jsonl** banati hai (ORCA ki tarah) —
 | Frontend | Next.js + Deck.GL | **single static HTML + stdlib server** |
 | Install | Node + Docker + Postgres | **`pip install -r requirements.txt`** |
 
-### Naye pending (agentic layer)
-1. 🔴 **Chlorophyll-a** — abhi bhi unavailable (upar dekho)
-2. 🟡 **Wind file structure verify** — `3RIMG_L2P_VSW` ke andar ke dataset names
-3. 🟡 **AIS vessel traffic** — aisstream.io key (real, simulation nahi)
-4. 🟡 **Ocean currents** — ORCA Copernicus NetCDF use karta hai; humein source chahiye
-5. 🔵 **LLM synthesis** — `OPENAI_API_KEY` set karke chalao (optional, offline default hai)
+### Pending (agentic layer)
+1. 🟡 **Wind file structure verify** — `3RIMG_L2P_VSW` ke dataset names confirm karo
+   (`python h5inspect.py data\...VSW....h5 --values`)
+2. 🟡 **AIS vessel traffic** — `AISSTREAM_API_KEY` set karo (free: aisstream.io)
+   — code ready hai, **kabhi simulate nahi karta**
+3. 🟡 **Ocean currents** — ORCA Copernicus NetCDF use karta hai; source chahiye
+4. 🟡 **Chlorophyll data source** — Bhuvan/NASA/Copernicus se file lao (code ready)
+5. 🔵 **LLM synthesis** — `OPENAI_API_KEY` (optional, offline default hai)
 6. 🔵 **Voice input (Bhashini)** — SIH ke liye achha feature
-7. 🔵 **pgvector RAG** — policy docs zyada hone par
+7. 🔵 **Bathymetry (GEBCO)** — shelf score aur behtar banega
+8. 🔵 **Multi-day trend / anomaly** — 7-day composite vs climatology
+
+### ✅ v2.0 me complete ho gaya
+- Multi-file composite (median), time-series plot, animation GIF
+- Species forecaster agent (12 commercial species)
+- GeoJSON export (QGIS/Google Earth ke liye)
+- Watch mode (auto-update), doctor (env check), MATSYA.bat (Windows menu)
+- Chlorophyll layer (optional, real file ho to chalta hai)
+- AIS client (real only, kabhi fake nahi)
 
 ---
 

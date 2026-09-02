@@ -34,7 +34,7 @@ DEFAULTS = {
         "sst_sigma_c": 3.2,
         "sst_min_c": 24.0,            # isse kam = bahut thanda
         "sst_max_c": 32.0,
-        "weights": {"front": 35, "sst": 30, "eez": 15, "shelf": 10, "wind": 10},
+        "weights": {"front": 30, "sst": 25, "eez": 12, "shelf": 8, "wind": 8, "chl": 17},
         "shelf_max_km": 120.0,        # continental shelf ~ fish zyada
         "wind_calm_ms": 6.0,          # isse kam = theek
         "wind_caution_ms": 10.0,      # isse upar = dhyaan

@@ -45,6 +45,19 @@ def shelf_score(dist_km, cfg):
     return np.clip(s, 0, 1)
 
 
+def chl_score(chl, cfg):
+    """0..1 — chlorophyll-a (mg/m3). PFZ literature: machhli 0.2-2 mg/m3 me jama hoti hain."""
+    if chl is None:
+        return None
+    c = np.where(np.isfinite(chl), chl, np.nan)
+    # log-normal peak around 0.6 mg/m3
+    with np.errstate(invalid="ignore", divide="ignore"):
+        x = np.log10(np.clip(c, 0.01, 30.0))
+        s = np.exp(-(((x - np.log10(0.6)) / 0.55) ** 2))
+    s = np.where(np.isnan(c), np.nan, s)
+    return np.clip(s, 0, 1)
+
+
 def wind_speed_from_uv(u, v):
     return np.sqrt(np.nan_to_num(u) ** 2 + np.nan_to_num(v) ** 2)
 
@@ -75,19 +88,35 @@ def sea_state_label(speed_ms, cfg):
     return "TOOFANI (mat jao)", "#ef4444"
 
 
-def pfz_score(sst_c, grad, in_eez, dist_km, wind_ms, cfg):
-    """Final 0-100 Potential Fishing Zone score (real inputs)."""
-    w = cfg["physics"]["weights"]
-    total = (w["front"] + w["sst"] + w["eez"] + w["shelf"] + w["wind"])
+def pfz_score(sst_c, grad, in_eez, dist_km, wind_ms, cfg, chl=None):
+    """
+    Final 0-100 PFZ score. Har layer ka contribution uske weight se.
+    Jo layer uplabdh NAHI hai uska weight baaki layers me baant diya jata hai
+    (taaki chlorophyll na hone par score artificially kam na ho).
+    """
+    w = dict(cfg["physics"]["weights"])
 
-    s_front = front_score(grad, cfg)
-    s_sst = sst_score(sst_c, cfg)
-    s_eez = np.where(in_eez, 1.0, 0.15) if in_eez is not None else 0.5
-    s_shelf = shelf_score(dist_km, cfg) if dist_km is not None else 0.5
-    s_wind = sea_state(wind_ms, cfg) if wind_ms is not None else 0.6
+    parts = []
+    parts.append((w.get("front", 35), front_score(grad, cfg)))
+    parts.append((w.get("sst", 30), sst_score(sst_c, cfg)))
+    parts.append((w.get("eez", 15),
+                  np.where(in_eez, 1.0, 0.15) if in_eez is not None else None))
+    parts.append((w.get("shelf", 10), shelf_score(dist_km, cfg)))
+    parts.append((w.get("wind", 10), sea_state(wind_ms, cfg)))
+    parts.append((w.get("chl", 18), chl_score(chl, cfg)))
 
-    score = (w["front"] * s_front + w["sst"] * s_sst + w["eez"] * s_eez +
-             w["shelf"] * s_shelf + w["wind"] * s_wind) / total * 100.0
+    num = None
+    den = 0.0
+    for weight, arr in parts:
+        if arr is None or weight is None:
+            continue
+        arr = np.asarray(arr, dtype=float)
+        arr = np.where(np.isfinite(arr), arr, 0.0)
+        num = arr * weight if num is None else num + arr * weight
+        den += weight
+    if num is None or den == 0:
+        return np.zeros_like(sst_c)
+    score = num / den * 100.0
     score = np.where(np.isfinite(sst_c), score, np.nan)
     return np.clip(score, 0, 100)
 

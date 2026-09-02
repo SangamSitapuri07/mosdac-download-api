@@ -131,6 +131,8 @@ class Supervisor(Agent):
         tasks = ["ocean_analytics", "risk_geofencing", "policy_rag"]
         if intent in ("FIND_FISHING_ZONE", "NAVIGATE"):
             tasks.append("navigation")
+        if intent in ("FIND_FISHING_ZONE", "CHECK_SAFETY"):
+            tasks.append("species_forecaster")
         if intent == "NAVIGATE":
             tasks.insert(0, "navigation")
         if intent == "POLICY_QUERY":

@@ -6,7 +6,12 @@
   },
   "region": {
     "name": "indian-ocean",
-    "bbox": [40.0, -40.0, 110.0, 30.0],
+    "bbox": [
+      40.0,
+      -40.0,
+      110.0,
+      30.0
+    ],
     "max_grid": 700
   },
   "fetch": {
@@ -19,7 +24,14 @@
     "sst_sigma_c": 3.2,
     "sst_min_c": 24.0,
     "sst_max_c": 32.0,
-    "weights": { "front": 35, "sst": 30, "eez": 15, "shelf": 10, "wind": 10 },
+    "weights": {
+      "front": 30,
+      "sst": 25,
+      "eez": 12,
+      "shelf": 8,
+      "wind": 8,
+      "chl": 17
+    },
     "shelf_max_km": 120.0,
     "wind_calm_ms": 6.0,
     "wind_caution_ms": 10.0,
